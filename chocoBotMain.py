@@ -9,7 +9,7 @@ import os
 import random
 import chocodico # dico de liens d'images pour la cmd choco
 from chocodico import dico
-
+from  chocodico import cristal_dico
 intents = discord.Intents.all()  # intents, je sais trops a quoi sa sert mais sans mon code marche pas
 bot = commands.Bot(command_prefix="$", intents=intents)  # le préfixe et leur truc barbare
 bot.remove_command('help')  # j'ai ma propre commande help
@@ -47,10 +47,14 @@ async def help(ctx):
 ***NOTE: les commandes de la section MODÉRATION sonts uniquement utilisables par les Administrateurs***       
  $ban [@utilisateur] [raison]: ban l'utilisateur mentionné
  $unban [@utilisateur] [raison]: déban l'utilisateur mentionné
+ $mute [@utilisateur] [raison]: rend muet l'utilisateur mentioné
+ $unmute [@utilisateur]: démute la personne mentionnée
  $kick [@utilisateur] [raison]: expulse l'utilisateur mentionné\n
  **FUN:**
 *ces commandes peuvent être utlisées par tout les utilisateurs*
+$cristal_ball [texte]: répond a vos questions (texte après la cmd) a l'aide de sa boule magique...
 $say [texte] renvoie que vous avez écrit après la commande
+$choco envoie une image de chocolatine aléatoirement
     """, color=0x008000)
     embed.set_author(name="AIDE RELATIVE AUX COMMANDES", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     embed.set_thumbnail(url="https://media.tenor.com/GXMu0NRMHQgAAAAC/question-mark.gif")
@@ -60,11 +64,25 @@ $say [texte] renvoie que vous avez écrit après la commande
 
 @bot.command()
 async def choco(ctx):
-    choco_choice = random.randrange(1,12)
+    choco_choice = random.randrange(1,29) #choisis une choco random
     rdm_choco = random.choice(list(dico))
     await ctx.send(dico[f"{rdm_choco}"])
     log(f"{ctx.author.name} a executé la commande choco, choco choisie:{rdm_choco} ")
     print(f"{ctx.author.name} a executé la commande choco, choco choisie: {rdm_choco} ")
+
+@bot.command()
+async def cristal_ball(ctx, *msg):
+    log(f"commande cristall_ball executée par {ctx.author.name} contenant . {msg}")
+    print(f"commande cristall_ball executée par {ctx.author.name} contenant {msg}")
+    msg = " ".join(msg)
+    cristal_choice = random.randrange(1,9) #choisis une choco random
+    rdm_cristal = random.choice(list(cristal_dico))
+    embed = discord.Embed(title="**QUESTION:**", description=f"{msg}"   , color=0x8005fa)
+    embed.set_author(name="8ball")
+    embed.set_thumbnail(url="https://emojis.wiki/emoji-pics/microsoft/crystal-ball-microsoft.png")
+    embed.add_field(name="RÉPONSE:", value=f"{cristal_dico[rdm_cristal]}", inline=True)
+    embed.set_footer(text="Team Chocolatine - Attention, les réponses sonts aléatoires ne pas les prendre au sérieux !")
+    await ctx.send(embed=embed)
 
 
 @bot.command()
@@ -80,7 +98,7 @@ async def about(ctx):  # commande about
 
 
 @bot.command()
-async def rick(ctx):  # ma commande (qui rickroll, marche que pour mon ID)
+async def rick(ctx):  # ma commande (qui rickroll, marche que pour mon ID et celui de fifolker)
     if ctx.author.id == 721399612526559245 or 237588446397333505:
         await ctx.message.delete(
         )  # pour cacher les preuves, après ya les logs du discord et le shell biensur
