@@ -8,8 +8,7 @@ from discord.ext import commands
 import os
 
 intents = discord.Intents.all()  # intents, je sais trops a quoi sa sert mais sans mon code marche pas
-bot = commands.Bot(command_prefix="$",
-                   intents=intents)  # le préfixe et leur truc barbare
+bot = commands.Bot(command_prefix="$", intents=intents)  # le préfixe et leur truc barbare
 bot.remove_command('help')  # j'ai ma propre commande help
 
 
@@ -18,21 +17,17 @@ def log(msg):
         heure = time.ctime()  # Un truc utile pour mettre des heures dans les logs !
         log_it.write(f"{heure} | {msg}\n")
 
-
 @bot.event
 async def on_ready():
     print("Le Choco bot est en ligne")
     log("Le Choco Bot est en ligne")
-
-
 # rien de spécial, juste un msg pour dire que  le bot est en ligne (qui est aussi envoyé dans la console !)
 
 
 @bot.command()  # commande help
 async def help(ctx):
     log(f"commande help enclenchée par {ctx.author.name}")
-    print(f"commande help enclenchée par {ctx.author.name}"
-          )  # les logs de la console
+    print(f"commande help enclenchée par {ctx.author.name}")  # les logs de la console
     await ctx.send(""" 
 	**Aide relative aux commandes**:
 *Préfixe:* _**$**_\n
@@ -53,8 +48,7 @@ $say [texte] renvoie se que vous avez écrit	""")  # le texte de la cmd
 @bot.command()
 async def about(ctx):  # commande about
     log(f"commande about éxécutée par {ctx.author.name}")
-    await ctx.send(
-        f"Le Choco bot est un bot discord dédié au serveur Team Chocolatine (https://discord.gg/wZ5aNWk33y) il a été développé par jarvis09#1787")
+    await ctx.send(f"Le Choco bot est un bot discord dédié au serveur Team Chocolatine (https://discord.gg/wZ5aNWk33y) il a été développé par jarvis09#1787 & FiFolker#9350")
 
 
 @bot.command()
@@ -95,8 +89,7 @@ async def say(ctx, *txt):
     log(f"commande say enclanchée par {ctx.author.name} contenant: {txt}")
 
 
-@bot.command(
-)  # pour kick les gens, même si bon sans se mentir le kick de discord fait le job
+@bot.command()  # pour kick les gens, même si bon sans se mentir le kick de discord fait le job
 async def kick(ctx, user: discord.User, *reason):
     if ctx.message.author.guild_permissions.administrator:
         reason = " ".join(reason)
@@ -105,8 +98,7 @@ async def kick(ctx, user: discord.User, *reason):
         print(f"{ctx.author.name} a expulsé {user} pour la raison {reason}")
         log(f"{ctx.author.name} a expulsé {user} pour la raison {reason}")
     else:
-        await ctx.send(
-            "**Erreur, vous n'avez pas la permission de faire ça !**")
+        await ctx.send("**Erreur, vous n'avez pas la permission de faire ça !**")
         print(f"{ctx.author.name} a tenté d'utiliser la commande kick sur {user} pour la raison {reason} !")
         log(f"""{ctx.author.name} a tenté d'utiliser la commande kick sur {user} pour la raison {reason},
             mais il n'avait pas la permission amdinistrateur donc la commande a échouée.""")
@@ -161,16 +153,11 @@ async def mute(ctx, member: discord.Member, *, reason=None):
             mutedRole = await guild.create_role(name="Muted")
 
             for channel in guild.channels:
-                await channel.set_permissions(mutedRole,
-                                              speak=False,
-                                              send_messages=False,
-                                              read_message_history=True,
-                                              read_messages=False)
-
+                await channel.set_permissions(mutedRole, speak=False, send_messages=False, read_message_history=True, read_messages=False)
         await member.add_roles(mutedRole, reason=reason)
         await ctx.send(f"{ctx.author.name} a rendu muet **{member.mention}* pour la raison **{reason}**")
         log(f"{ctx.author.name} a rendu muet {member}* pour la raison **{reason}")
-        print(f"{ctx.author.name} a rendu muet **{member.mention}* pour la raison **{reason}**")
+        print(f"**{ctx.author.name} a rendu muet {member.mention} pour la raison:** *{reason}*")
         await member.send(
             f"Vous avez été rendu muet sur le serveur **{guild.name}** pour la raison: **{reason}**")
     else:
