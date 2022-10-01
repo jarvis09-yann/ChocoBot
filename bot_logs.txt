@@ -120,3 +120,14 @@ Sat Oct  1 21:26:45 2022 | jarvis09 a executé la commande choco, choco choisie:6
 Sat Oct  1 21:26:49 2022 | jarvis09 a executé la commande choco, choco choisie:7 
 Sat Oct  1 21:26:54 2022 | jarvis09 a executé la commande choco, choco choisie:8 
 Sat Oct  1 21:26:57 2022 | jarvis09 a executé la commande choco, choco choisie:8 
+Sat Oct  1 21:37:27 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:38:23 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:39:39 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:39:54 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:41:55 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:42:24 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:45:38 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:46:29 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:46:58 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:54:36 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:54:45 2022 | jarvis09 a executé la commande choco, choco choisie:11 
