@@ -1,0 +1,29 @@
+ ________  ___  ___  ________  ________  ________          ________  ________  _________
+|\   ____\|\  \|\  \|\   __  \|\   ____\|\   __  \        |\   __  \|\   __  \|\___   ___\
+\ \  \___|\ \  \\\  \ \  \|\  \ \  \___|\ \  \|\  \       \ \  \|\ /\ \  \|\  \|___ \  \_|
+ \ \  \    \ \   __  \ \  \\\  \ \  \    \ \  \\\  \       \ \   __  \ \  \\\  \   \ \  \
+  \ \  \____\ \  \ \  \ \  \\\  \ \  \____\ \  \\\  \       \ \  \|\  \ \  \\\  \   \ \  \
+   \ \_______\ \__\ \__\ \_______\ \_______\ \_______\       \ \_______\ \_______\   \ \__\
+    \|_______|\|__|\|__|\|_______|\|_______|\|_______|        \|_______|\|_______|    \|__|
+
+Logs du Chocobot
+Sat Oct  1 12:38:24 2022 | Le Choco Bot est en ligne
+Sat Oct  1 12:38:35 2022 | commande help enclench�e par jarvis09
+Sat Oct  1 12:38:42 2022 | commande info execut�e par {ctx.author.name}
+Sat Oct  1 12:38:47 2022 | commande about �x�cut�e par jarvis09
+Sat Oct  1 12:38:57 2022 | commande ping enclanch�e par jarvis09, la latene du bot est de 0.1635926000000003ms
+Sat Oct  1 12:39:07 2022 | commande say enclanch�e par jarvis09 contenant: ('bla', 'bla', 'bla')
+Sat Oct  1 12:40:15 2022 | jarvis09 a expuls� Testing bot#6509 pour la raison 
+Sat Oct  1 12:41:31 2022 | jarvis09 a rendu muet Testing bot#6509* pour la raison **je t'aime pas
+Sat Oct  1 12:42:37 2022 | jarvis09 a rendu muet Testing bot#6509* pour la raison **None
+Sat Oct  1 12:43:14 2022 | Le Choco Bot est en ligne
+Sat Oct  1 12:43:22 2022 | jarvis09 a rendu muet Testing bot#6509* pour la raison **None
+Sat Oct  1 12:44:23 2022 | Le Choco Bot est en ligne
+Sat Oct  1 12:45:03 2022 | jarvis09 a rendu muet Testing bot#6509* pour la raison **test
+Sat Oct  1 12:45:37 2022 | Le Choco Bot est en ligne
+Sat Oct  1 12:45:45 2022 | jarvis09 a rendu muet Testing bot#6509* pour la raison **test
+Sat Oct  1 12:46:26 2022 | Le Choco Bot est en ligne
+Sat Oct  1 12:46:34 2022 | Le Choco Bot est en ligne
+Sat Oct  1 12:46:40 2022 | jarvis09 a rendu muet Testing bot#6509* pour la raison **None
+Sat Oct  1 12:47:23 2022 | jarvis09 a tent� d'utiliser la commande kick sur Testing bot#6509 pour la raison au revoir !
+Sat Oct  1 13:14:48 2022 | Le Choco Bot est en ligne
