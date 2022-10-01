@@ -92,3 +92,31 @@ Sat Oct  1 18:19:24 2022 | commande info executée par {ctx.author.name}
 Sat Oct  1 18:19:29 2022 | commande about éxécutée par jarvis09
 Sat Oct  1 18:19:34 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.15592279999999903ms
 Sat Oct  1 18:20:03 2022 | commande help enclanchée par jarvis09
+Sat Oct  1 21:14:54 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:19:35 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:19:44 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:21:23 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:21:27 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:21:45 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:21:50 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:21:58 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:22:06 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:25:31 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:25:45 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:25:50 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:25:55 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:25:58 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:26:01 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:26:06 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:26:09 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:26:12 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:26:15 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:26:18 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:26:33 2022 | Le Choco Bot est en ligne
+Sat Oct  1 21:26:36 2022 | jarvis09 a executé la commande choco, choco choisie:1 
+Sat Oct  1 21:26:38 2022 | jarvis09 a executé la commande choco, choco choisie:3 
+Sat Oct  1 21:26:41 2022 | jarvis09 a executé la commande choco, choco choisie:3 
+Sat Oct  1 21:26:45 2022 | jarvis09 a executé la commande choco, choco choisie:6 
+Sat Oct  1 21:26:49 2022 | jarvis09 a executé la commande choco, choco choisie:7 
+Sat Oct  1 21:26:54 2022 | jarvis09 a executé la commande choco, choco choisie:8 
+Sat Oct  1 21:26:57 2022 | jarvis09 a executé la commande choco, choco choisie:8 
