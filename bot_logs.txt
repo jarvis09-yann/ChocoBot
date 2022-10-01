@@ -27,3 +27,6 @@ Sat Oct  1 12:46:34 2022 | Le Choco Bot est en ligne
 Sat Oct  1 12:46:40 2022 | jarvis09 a rendu muet Testing bot#6509* pour la raison **None
 Sat Oct  1 12:47:23 2022 | jarvis09 a tentï¿½ d'utiliser la commande kick sur Testing bot#6509 pour la raison au revoir !
 Sat Oct  1 13:14:48 2022 | Le Choco Bot est en ligne
+Sat Oct  1 14:45:11 2022 | Le Choco Bot est en ligne
+Sat Oct  1 15:26:57 2022 | Le Choco Bot est en ligne
+Sat Oct  1 15:40:54 2022 | jarvis09 a expulsé Testing bot#6509 pour la raison tkt

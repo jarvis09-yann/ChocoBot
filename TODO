@@ -12,3 +12,4 @@ Merci.
 
 - Reparer la commande $mute (problème de markdown et parfois ça met None après la raison, plein d'erreurs)
 - Reparer la commande unban, elle marche pas du tout plein d'erreurs
+- Faire un message auto quand qq join/leave/est ban du serveur (le truc de dyno marche pas) si possible avec un embed !
