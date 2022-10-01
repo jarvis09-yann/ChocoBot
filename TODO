@@ -13,3 +13,20 @@ Merci.
 - Reparer la commande $mute (problème de markdown et parfois ça met None après la raison, plein d'erreurs)
 - Reparer la commande unban, elle marche pas du tout plein d'erreurs
 - Faire un message auto quand qq join/leave/est ban du serveur (le truc de dyno marche pas) si possible avec un embed !
+               LISTE DES CMDS AVEC EMBEDS:
+-BAN: FAIT
+-BAN PAS PERM: FAIT
+-KICK: FAIT
+-KICK PAS PERM: FAIT
+-MUTE:FAIT
+-UNMUTE:FAIT
+-UNBAN: CMD CASSÉE !
+-UNBAN PAS BANLIST: CMD CASSÉE !
+-UNBAN PAS PERM: fait
+-HELP: FAIT
+-ABOUT: FAIT
+-PING: FAIT
+-SAY: PAS BESOIN POUR CETTE CMD
+
+SITE POUR CRÉER DES EMBEDS EN PYTHON SANS CODE:
+https://cog-creators.github.io/discord-embed-sandbox/

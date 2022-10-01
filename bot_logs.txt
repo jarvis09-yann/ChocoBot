@@ -30,3 +30,65 @@ Sat Oct  1 13:14:48 2022 | Le Choco Bot est en ligne
 Sat Oct  1 14:45:11 2022 | Le Choco Bot est en ligne
 Sat Oct  1 15:26:57 2022 | Le Choco Bot est en ligne
 Sat Oct  1 15:40:54 2022 | jarvis09 a expulsé Testing bot#6509 pour la raison tkt
+Sat Oct  1 15:51:54 2022 | Le Choco Bot est en ligne
+Sat Oct  1 15:52:56 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:28:37 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:29:52 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:31:52 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:34:29 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:35:42 2022 | jarvis09 a expulsé Testing bot#6509 pour la raison 
+Sat Oct  1 16:37:00 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:37:37 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:38:14 2022 | jarvis09 a tenté d'utiliser la commande kick sur Testing bot#6509 pour la raison  !
+Sat Oct  1 16:41:15 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:41:48 2022 | jarvis09 a tenté d'utiliser la commande ban sur Testing bot#6509 pour la raison  !
+Sat Oct  1 16:42:03 2022 | jarvis09 a tenté d'utiliser la commande ban sur Testing bot#6509 pour la raison t'est pas bo !
+Sat Oct  1 16:53:01 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:53:11 2022 | dogastley a expulsé Testing bot#6509 pour la raison 
+Sat Oct  1 16:58:14 2022 | Le Choco Bot est en ligne
+Sat Oct  1 16:58:36 2022 | dogastley a tenté d'utiliser la commande kick sur Testing bot#6509 pour la raison (),
+            mais il n'avait pas la permission amdinistrateur donc la commande a échouée.
+Sat Oct  1 17:00:32 2022 | dogastley a tenté d'utiliser la commande kick sur Testing bot#6509 pour la raison ('t', 'pas', 'bo'),
+            mais il n'avait pas la permission amdinistrateur donc la commande a échouée.
+Sat Oct  1 17:01:59 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:02:28 2022 | dogastley a tenté d'utiliser la commande ban sur Testing bot#6509 pour la raison ,
+        mais il n'avait pas la permission amdinistrateur donc la commande a échouée.
+Sat Oct  1 17:03:06 2022 | dogastley a tenté de unmute Testing bot#6509,
+        mais il n'avait pas la permission amdinistrateur donc la commande a échouée.
+Sat Oct  1 17:14:53 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:15:37 2022 | jarvis09 a rendu muet Koya#1050* pour la raison **None
+Sat Oct  1 17:16:12 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:16:25 2022 | jarvis09 a rendu muet Koya#1050* pour la raison **None
+Sat Oct  1 17:16:38 2022 | jarvis09 a rendu muet Koya#1050* pour la raison **t pas bo
+Sat Oct  1 17:20:51 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:21:56 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:23:39 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:24:45 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:28:01 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:29:16 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:30:45 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:34:45 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:40:02 2022 | Le Choco Bot est en ligne
+Sat Oct  1 17:44:47 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 17:55:07 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:02:19 2022 | Le Choco Bot est en ligne
+Sat Oct  1 18:02:29 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:05:12 2022 | Le Choco Bot est en ligne
+Sat Oct  1 18:05:18 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:05:52 2022 | Le Choco Bot est en ligne
+Sat Oct  1 18:05:55 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:06:24 2022 | Le Choco Bot est en ligne
+Sat Oct  1 18:06:46 2022 | Le Choco Bot est en ligne
+Sat Oct  1 18:06:51 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:07:31 2022 | commande info executée par {ctx.author.name}
+Sat Oct  1 18:14:04 2022 | Le Choco Bot est en ligne
+Sat Oct  1 18:14:10 2022 | commande about éxécutée par jarvis09
+Sat Oct  1 18:14:40 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.17524930000000016ms
+Sat Oct  1 18:17:46 2022 | Le Choco Bot est en ligne
+Sat Oct  1 18:17:49 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.1598630000000001ms
+Sat Oct  1 18:18:34 2022 | commande say enclanchée par jarvis09 contenant: ('test', 'ha')
+Sat Oct  1 18:19:19 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:19:24 2022 | commande info executée par {ctx.author.name}
+Sat Oct  1 18:19:29 2022 | commande about éxécutée par jarvis09
+Sat Oct  1 18:19:34 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.15592279999999903ms
+Sat Oct  1 18:20:03 2022 | commande help enclanchée par jarvis09
