@@ -34,8 +34,8 @@ cant_use_cmd.set_footer(text=FOOTER)
 
 @bot.event
 async def on_ready():
-    print("Le Choco Bot est en ligne")
-    log("Le Choco Bot est en ligne")
+    print("Le ChocoBotFolder est en ligne")
+    log("Le ChocoBotFolder est en ligne")
 # rien de spécial, juste un msg pour dire que le bot est en ligne (qui est aussi envoyé dans la console !)
 
 
@@ -128,7 +128,7 @@ async def about(ctx):  # commande about
     embed = discord.Embed(
         title="Le Choco bot est un bot discord dédié au serveur Team Chocolatine (https://discord.gg/wZ5aNWk33y) il a été développé par jarvis09#1787 & FiFolker#9350",
         color=0xff0000)
-    embed.set_author(name="A propos du Choco Bot", url="https://discord.gg/wZ5aNWk33y")
+    embed.set_author(name="A propos du ChocoBotFolder", url="https://discord.gg/wZ5aNWk33y")
     embed.set_thumbnail(url="https://media.tenor.com/b7HjoHE1K4QAAAAj/i%CC%87nfo-icon.gif")
     embed.set_footer(text=FOOTER)
     await ctx.send(embed=embed)
