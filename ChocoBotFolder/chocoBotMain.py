@@ -15,7 +15,7 @@ bot.remove_command('help')  # j'ai ma propre commande help
 
 # Constante (parce qu'on les met partout)
 RICKROLL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-FOOTER = "Team Chocolatine tine tine "
+FOOTER = "Team Chocolatine"
 
 
 ###################################
