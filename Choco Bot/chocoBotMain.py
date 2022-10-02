@@ -83,6 +83,7 @@ async def help(ctx):
 -cristal_ball [texte]: répond a vos questions (texte après la cmd) a l'aide de sa boule magique...
 -say [texte] renvoie que vous avez écrit après la commande
 -choco envoie une image de chocolatine aléatoirement
+-joke envoie une blague (nulle) aléatoire
     """, color=0x008000)
     embed.set_author(name="AIDE RELATIVE AUX COMMANDES", url=RICKROLL)
     embed.set_thumbnail(url="https://media.tenor.com/GXMu0NRMHQgAAAAC/question-mark.gif")
@@ -102,15 +103,15 @@ async def choco(ctx):
 async def joke(ctx):
     joke_choice = random.choice(list(joke_dico))
     await ctx.send(joke_dico[f"{joke_choice}"])
-    log(f"{ctx.author.name} a executé la commande joke, choco choisie:{joke_choice} ")
-    print(f"{ctx.author.name} a executé la commande joke, choco choisie: {joke_choice} ")
+    log(f"{ctx.author.name} a executé la commande joke, blague choisie:{joke_choice} ")
+    print(f"{ctx.author.name} a executé la commande joke, blague choisie: {joke_choice} ")
 
 
 @bot.command()
 async def cristal_ball(ctx, *msg):
+    msg = " ".join(msg)
     log(f"commande cristall_ball executée par {ctx.author.name} contenant . {msg}")
     print(f"commande cristall_ball executée par {ctx.author.name} contenant {msg}")
-    msg = " ".join(msg)
     rdm_cristal = random.choice(list(cristal_dico))
     embed = discord.Embed(title="**QUESTION:**", description=f"{msg}", color=0x8005fa)
     embed.set_author(name="8ball")
@@ -163,8 +164,8 @@ async def info(ctx):  # quelques infos à propos du serveur
     nb_of_members = serveur.member_count
     msg = f"Le serveur **{serv_name}** a **{nb_of_members}** membres !"
     await ctx.send(msg)
-    print(f"commande info enclanchée par {ctx.author.name} !")
-    log(f"commande info executée par {ctx.author.name}")
+    print(f"commande info enclenchée par {ctx.author.name} !")
+    log(f"commande info exécutée par {ctx.author.name}")
 
 
 @bot.command()  # un truc pr le fun comme ça
