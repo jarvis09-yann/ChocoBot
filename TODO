@@ -11,7 +11,6 @@ IMPORTANT: quand la tache a été faite, merci de ne pas la supprimer mais de me
 Merci.
 
 - Reparer la commande $mute (problème de markdown et parfois ça met None après la raison, plein d'erreurs)
-- Reparer la commande unban, elle marche pas du tout plein d'erreurs
 
                LISTE DES CMDS AVEC EMBEDS:
 -BAN: FAIT
@@ -19,8 +18,8 @@ Merci.
 -KICK: FAIT
 -KICK PAS PERM: FAIT
 -MUTE:FAIT
--UNMUTE:FAIT
--UNBAN: CMD CASSÉE !
+-UNMUTE: CMD CASSÉE !
+-UNBAN: FAIT
 -UNBAN PAS BANLIST: CMD CASSÉE !
 -UNBAN PAS PERM: FAIT
 -HELP: FAIT

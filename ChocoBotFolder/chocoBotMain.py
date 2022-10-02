@@ -36,8 +36,8 @@ cant_use_cmd.set_footer(text=FOOTER)
 
 @bot.event
 async def on_ready():
-    print("Le ChocoBotFolder est en ligne")
-    log("Le ChocoBotFolder est en ligne")
+    print("Le Choco Bot est en ligne")
+    log("Le Choco Bot est en ligne")
 # rien de spécial, juste un msg pour dire que le bot est en ligne (qui est aussi envoyé dans la console !)
 
 
@@ -56,7 +56,7 @@ async def on_member_join(member):
 @bot.event
 async def on_member_remove(member):
     departure = bot.get_channel(1009442645162070066)
-    embed = discord.Embed(title="**Au revoir !__**",
+    embed = discord.Embed(title="**__Au revoir !__**",
                           description=f"Au revoir {member.mention} et peut être à bientôt sur le serveur de la Team Chocolatine !",
                           color=0xBD3100)
     embed.set_thumbnail(url=LOGO_CHOCOBOT)
@@ -69,7 +69,7 @@ async def on_member_ban(guild, user):
     arrival_departure: discord.TextChannel = bot.get_channel(1009442645162070066)
     embed = discord.Embed(title="**__BAN !__**",
                           description=f"{user.mention} s'est fait bannir du serveur {guild.name} !",
-                          color=0xBD3100)
+                          color=0xBD3100, icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
     embed.set_thumbnail(url=LOGO_CHOCOBOT)
     embed.set_footer(text=FOOTER)
     await arrival_departure.send(embed=embed)
@@ -141,7 +141,7 @@ async def about(ctx):  # commande about
     embed = discord.Embed(
         title="Le Choco bot est un bot discord dédié au serveur Team Chocolatine (https://discord.gg/wZ5aNWk33y) il a été développé par jarvis09#1787 & FiFolker#9350",
         color=0xff0000)
-    embed.set_author(name="A propos du ChocoBotFolder", url="https://discord.gg/wZ5aNWk33y")
+    embed.set_author(name="A propos du Choco Bot", url="https://discord.gg/wZ5aNWk33y")
     embed.set_thumbnail(url="https://media.tenor.com/b7HjoHE1K4QAAAAj/i%CC%87nfo-icon.gif")
     embed.set_footer(text=FOOTER)
     await ctx.send(embed=embed)
@@ -194,7 +194,7 @@ async def kick(ctx, user: discord.User, *reason):
     if ctx.message.author.guild_permissions.administrator:
         reason = " ".join(reason)
         await ctx.guild.kick(user, reason=reason)
-        embed = discord.Embed(title=f"{user} a été kick pour la raison {reason}, que cella lui serve de leçon !",
+        embed = discord.Embed(title=f"{user} a été kick pour la raison {reason}, que cela lui serve de leçon !",
                               color=0xedf305)
         embed.set_author(name="KICK !", url=RICKROLL,
                          icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
@@ -217,7 +217,7 @@ async def ban(ctx, user: discord.User, *reason):
     reason = " ".join(reason)
     if ctx.message.author.guild_permissions.administrator:
         await ctx.guild.ban(user, reason=reason)
-        ban_embed = discord.Embed(title=f"{user} a été banni pour la raison: {reason} que cella lui serve de leçon !",
+        ban_embed = discord.Embed(title=f"{user} a été banni pour la raison: {reason} que cela lui serve de leçon !",
                                   color=0xff0000)
         ban_embed.set_author(name="BAN !", url=RICKROLL,
                              icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
@@ -234,33 +234,26 @@ async def ban(ctx, user: discord.User, *reason):
         mais il n'avait pas la permission administrateur donc la commande a échouée.""")
 
 
-@bot.command()  # pour déban
-async def unban(ctx, user, *reason):
+@bot.command()
+async def unban(ctx, member:discord.User, *, reason=None):
     if ctx.message.author.guild_permissions.administrator:
-        reason = " ".join(reason)
-        nom, user_id = user.split("#")
-        banned_users = await ctx.guild.bans()
-        member = discord.Member
-        for i in banned_users:
-            if i.user.name == nom and i.user.discriminator == user_id:
-                await ctx.guild.unban(i.user.discriminator, reason=reason)
-                embed = discord.Embed(title=f"{member} a été unban par {ctx.author.name} pour la raison: {reason} !",
-                                      color=0x1111e8)
-                embed.set_author(name="UNBAN", url=RICKROLL)
-                embed.set_thumbnail(url="https://media.tenor.com/_4K_0sndwtEAAAAi/green-white.gif")
-                embed.set_footer(text=FOOTER)
-                await ctx.send(embed=embed)
-                print(f"{ctx.author.name} a utilisé la commande deban ban sur {user} pour la raison {reason} !")
-                log(f"{ctx.author.name} a utilisé la commande deban sur {user} pour la raison {reason}")
-                return
-        await ctx.send(f"L'utilisateur {user} n'est pas dans la banlist !")
-        print(
-            f"{ctx.author.name} a utilisé la commande deban sur {user} pour la raison {reason} mais il n'était pas dans la banlist !")
-        log(f"{ctx.author.name} a tenté d'utilisé la commande deban sur {user} pour la raison {reason} mais il n'était pas dans la banlist")
+        if reason is None:
+            reason = f"Aucune raison donnée"
+        await ctx.guild.unban(member, reason=reason)
+        embed = discord.Embed(title=f"{member} a été unban par {ctx.author.name} pour la raison: {reason} !",
+                              color=0x1111e8)
+        embed.set_author(name="UNBAN", url=RICKROLL)
+        #embed.set_thumbnail(url=member.avatar_url) marche pas a revoir
+        embed.add_field(name="Modérateur", value=f"{ctx.author}", inline=True)
+        embed.set_footer(text=FOOTER)
+        await ctx.send(embed=embed)
+        print(f"{ctx.author.name} a utilisé la commande deban ban sur {member} pour la raison {reason} !")
+        log(f"{ctx.author.name} a utilisé la commande deban sur {member} pour la raison {reason}")
+        print(f"Deban réussi {member.name}")
     else:
         await ctx.send(embed=cant_use_cmd)
-        print(f"""{ctx.author.name} a tenté d'utiliser la commande unban sur {user} pour la raison {reason}
-            mais il n'avait pas la permission administrateur donc la commande a échouée.""")
+        print(f"""{ctx.author.name} a tenté d'utiliser la commande unban sur {member} pour la raison {reason} mais il 
+        n'avait pas la permission administrateur donc la commande a échouée.""")
 
 
 @bot.command()  # juste le mute

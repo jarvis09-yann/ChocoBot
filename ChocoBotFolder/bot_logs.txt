@@ -215,3 +215,13 @@ Sun Oct  2 18:34:12 2022 | Le Choco Bot est en ligne
 Sun Oct  2 18:35:14 2022 | Le Choco Bot est en ligne
 Sun Oct  2 18:35:38 2022 | Le Choco Bot est en ligne
 Sun Oct  2 18:37:29 2022 | Le Choco Bot est en ligne
+Sun Oct  2 23:13:34 2022 | Le ChocoBotFolder est en ligne
+Sun Oct  2 23:13:55 2022 | Le ChocoBotFolder est en ligne
+Sun Oct  2 23:13:57 2022 | commande help enclenchée par FiFolker
+Sun Oct  2 23:14:32 2022 | commande about exécutée par FiFolker
+Sun Oct  2 23:20:11 2022 | FiFolker a tenté d'utiliser la commande ban sur Kylian#4126 pour la raison  !
+Sun Oct  2 23:24:27 2022 | Le Choco Bot est en ligne
+Sun Oct  2 23:24:31 2022 | commande about exécutée par FiFolker
+Sun Oct  2 23:24:49 2022 | FiFolker a tenté d'utiliser la commande ban sur Kylian#4126 pour la raison c'est un test !
+Sun Oct  2 23:28:34 2022 | Le Choco Bot est en ligne
+Sun Oct  2 23:29:36 2022 | FiFolker a utilisé la commande deban sur Kylian#4126 pour la raison c'est le dernier normalement
