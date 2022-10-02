@@ -221,7 +221,7 @@ async def mute(ctx, member: discord.Member, *, reason=None):
             for channel in guild.channels:
                 await channel.set_permissions(mutedRole, speak=False, send_messages=False, read_message_history=True, read_messages=False)
         await member.add_roles(mutedRole, reason=reason)
-        embed = discord.Embed(title=f"{member} a été mute pour la raison: {reason},     que cela lui serve de leçon !", color=0x1111e8)
+        embed = discord.Embed(title=f"{member} a été mute pour la raison: {reason}, test d'auto update que cela lui serve de leçon !", color=0x1111e8)
         embed.set_author(name="MUTE !", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         embed.set_thumbnail(url="https://media.tenor.com/FWh2E4AQyTEAAAAM/mute.gif")
         embed.set_footer(text="Team Chocolatine")
