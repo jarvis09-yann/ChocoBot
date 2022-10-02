@@ -29,32 +29,32 @@ Sat Oct  1 12:47:23 2022 | jarvis09 a tentï¿½ d'utiliser la commande kick sur Te
 Sat Oct  1 13:14:48 2022 | Le Choco Bot est en ligne
 Sat Oct  1 14:45:11 2022 | Le Choco Bot est en ligne
 Sat Oct  1 15:26:57 2022 | Le Choco Bot est en ligne
-Sat Oct  1 15:40:54 2022 | jarvis09 a expulsé Testing bot#6509 pour la raison tkt
+Sat Oct  1 15:40:54 2022 | jarvis09 a expulsï¿½ Testing bot#6509 pour la raison tkt
 Sat Oct  1 15:51:54 2022 | Le Choco Bot est en ligne
 Sat Oct  1 15:52:56 2022 | Le Choco Bot est en ligne
 Sat Oct  1 16:28:37 2022 | Le Choco Bot est en ligne
 Sat Oct  1 16:29:52 2022 | Le Choco Bot est en ligne
 Sat Oct  1 16:31:52 2022 | Le Choco Bot est en ligne
 Sat Oct  1 16:34:29 2022 | Le Choco Bot est en ligne
-Sat Oct  1 16:35:42 2022 | jarvis09 a expulsé Testing bot#6509 pour la raison 
+Sat Oct  1 16:35:42 2022 | jarvis09 a expulsï¿½ Testing bot#6509 pour la raison 
 Sat Oct  1 16:37:00 2022 | Le Choco Bot est en ligne
 Sat Oct  1 16:37:37 2022 | Le Choco Bot est en ligne
-Sat Oct  1 16:38:14 2022 | jarvis09 a tenté d'utiliser la commande kick sur Testing bot#6509 pour la raison  !
+Sat Oct  1 16:38:14 2022 | jarvis09 a tentï¿½ d'utiliser la commande kick sur Testing bot#6509 pour la raison  !
 Sat Oct  1 16:41:15 2022 | Le Choco Bot est en ligne
-Sat Oct  1 16:41:48 2022 | jarvis09 a tenté d'utiliser la commande ban sur Testing bot#6509 pour la raison  !
-Sat Oct  1 16:42:03 2022 | jarvis09 a tenté d'utiliser la commande ban sur Testing bot#6509 pour la raison t'est pas bo !
+Sat Oct  1 16:41:48 2022 | jarvis09 a tentï¿½ d'utiliser la commande ban sur Testing bot#6509 pour la raison  !
+Sat Oct  1 16:42:03 2022 | jarvis09 a tentï¿½ d'utiliser la commande ban sur Testing bot#6509 pour la raison t'est pas bo !
 Sat Oct  1 16:53:01 2022 | Le Choco Bot est en ligne
-Sat Oct  1 16:53:11 2022 | dogastley a expulsé Testing bot#6509 pour la raison 
+Sat Oct  1 16:53:11 2022 | dogastley a expulsï¿½ Testing bot#6509 pour la raison 
 Sat Oct  1 16:58:14 2022 | Le Choco Bot est en ligne
-Sat Oct  1 16:58:36 2022 | dogastley a tenté d'utiliser la commande kick sur Testing bot#6509 pour la raison (),
-            mais il n'avait pas la permission amdinistrateur donc la commande a échouée.
-Sat Oct  1 17:00:32 2022 | dogastley a tenté d'utiliser la commande kick sur Testing bot#6509 pour la raison ('t', 'pas', 'bo'),
-            mais il n'avait pas la permission amdinistrateur donc la commande a échouée.
+Sat Oct  1 16:58:36 2022 | dogastley a tentï¿½ d'utiliser la commande kick sur Testing bot#6509 pour la raison (),
+            mais il n'avait pas la permission amdinistrateur donc la commande a ï¿½chouï¿½e.
+Sat Oct  1 17:00:32 2022 | dogastley a tentï¿½ d'utiliser la commande kick sur Testing bot#6509 pour la raison ('t', 'pas', 'bo'),
+            mais il n'avait pas la permission amdinistrateur donc la commande a ï¿½chouï¿½e.
 Sat Oct  1 17:01:59 2022 | Le Choco Bot est en ligne
-Sat Oct  1 17:02:28 2022 | dogastley a tenté d'utiliser la commande ban sur Testing bot#6509 pour la raison ,
-        mais il n'avait pas la permission amdinistrateur donc la commande a échouée.
-Sat Oct  1 17:03:06 2022 | dogastley a tenté de unmute Testing bot#6509,
-        mais il n'avait pas la permission amdinistrateur donc la commande a échouée.
+Sat Oct  1 17:02:28 2022 | dogastley a tentï¿½ d'utiliser la commande ban sur Testing bot#6509 pour la raison ,
+        mais il n'avait pas la permission amdinistrateur donc la commande a ï¿½chouï¿½e.
+Sat Oct  1 17:03:06 2022 | dogastley a tentï¿½ de unmute Testing bot#6509,
+        mais il n'avait pas la permission amdinistrateur donc la commande a ï¿½chouï¿½e.
 Sat Oct  1 17:14:53 2022 | Le Choco Bot est en ligne
 Sat Oct  1 17:15:37 2022 | jarvis09 a rendu muet Koya#1050* pour la raison **None
 Sat Oct  1 17:16:12 2022 | Le Choco Bot est en ligne
@@ -69,57 +69,57 @@ Sat Oct  1 17:29:16 2022 | Le Choco Bot est en ligne
 Sat Oct  1 17:30:45 2022 | Le Choco Bot est en ligne
 Sat Oct  1 17:34:45 2022 | Le Choco Bot est en ligne
 Sat Oct  1 17:40:02 2022 | Le Choco Bot est en ligne
-Sat Oct  1 17:44:47 2022 | commande help enclenchée par jarvis09
-Sat Oct  1 17:55:07 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 17:44:47 2022 | commande help enclenchï¿½e par jarvis09
+Sat Oct  1 17:55:07 2022 | commande help enclenchï¿½e par jarvis09
 Sat Oct  1 18:02:19 2022 | Le Choco Bot est en ligne
-Sat Oct  1 18:02:29 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:02:29 2022 | commande help enclenchï¿½e par jarvis09
 Sat Oct  1 18:05:12 2022 | Le Choco Bot est en ligne
-Sat Oct  1 18:05:18 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:05:18 2022 | commande help enclenchï¿½e par jarvis09
 Sat Oct  1 18:05:52 2022 | Le Choco Bot est en ligne
-Sat Oct  1 18:05:55 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 18:05:55 2022 | commande help enclenchï¿½e par jarvis09
 Sat Oct  1 18:06:24 2022 | Le Choco Bot est en ligne
 Sat Oct  1 18:06:46 2022 | Le Choco Bot est en ligne
-Sat Oct  1 18:06:51 2022 | commande help enclenchée par jarvis09
-Sat Oct  1 18:07:31 2022 | commande info executée par {ctx.author.name}
+Sat Oct  1 18:06:51 2022 | commande help enclenchï¿½e par jarvis09
+Sat Oct  1 18:07:31 2022 | commande info executï¿½e par {ctx.author.name}
 Sat Oct  1 18:14:04 2022 | Le Choco Bot est en ligne
-Sat Oct  1 18:14:10 2022 | commande about éxécutée par jarvis09
-Sat Oct  1 18:14:40 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.17524930000000016ms
+Sat Oct  1 18:14:10 2022 | commande about ï¿½xï¿½cutï¿½e par jarvis09
+Sat Oct  1 18:14:40 2022 | commande ping enclanchï¿½e par jarvis09, la latene du bot est de 0.17524930000000016ms
 Sat Oct  1 18:17:46 2022 | Le Choco Bot est en ligne
-Sat Oct  1 18:17:49 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.1598630000000001ms
-Sat Oct  1 18:18:34 2022 | commande say enclanchée par jarvis09 contenant: ('test', 'ha')
-Sat Oct  1 18:19:19 2022 | commande help enclenchée par jarvis09
-Sat Oct  1 18:19:24 2022 | commande info executée par {ctx.author.name}
-Sat Oct  1 18:19:29 2022 | commande about éxécutée par jarvis09
-Sat Oct  1 18:19:34 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.15592279999999903ms
-Sat Oct  1 18:20:03 2022 | commande help enclanchée par jarvis09
+Sat Oct  1 18:17:49 2022 | commande ping enclanchï¿½e par jarvis09, la latene du bot est de 0.1598630000000001ms
+Sat Oct  1 18:18:34 2022 | commande say enclanchï¿½e par jarvis09 contenant: ('test', 'ha')
+Sat Oct  1 18:19:19 2022 | commande help enclenchï¿½e par jarvis09
+Sat Oct  1 18:19:24 2022 | commande info executï¿½e par {ctx.author.name}
+Sat Oct  1 18:19:29 2022 | commande about ï¿½xï¿½cutï¿½e par jarvis09
+Sat Oct  1 18:19:34 2022 | commande ping enclanchï¿½e par jarvis09, la latene du bot est de 0.15592279999999903ms
+Sat Oct  1 18:20:03 2022 | commande help enclanchï¿½e par jarvis09
 Sat Oct  1 21:14:54 2022 | Le Choco Bot est en ligne
-Sat Oct  1 21:19:35 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:19:44 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:19:35 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:19:44 2022 | jarvis09 a executï¿½ la commande choco
 Sat Oct  1 21:21:23 2022 | Le Choco Bot est en ligne
-Sat Oct  1 21:21:27 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:21:27 2022 | jarvis09 a executï¿½ la commande choco
 Sat Oct  1 21:21:45 2022 | Le Choco Bot est en ligne
-Sat Oct  1 21:21:50 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:21:58 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:22:06 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:25:31 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:25:45 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:25:50 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:25:55 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:25:58 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:26:01 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:26:06 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:26:09 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:26:12 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:26:15 2022 | jarvis09 a executé la commande choco
-Sat Oct  1 21:26:18 2022 | jarvis09 a executé la commande choco
+Sat Oct  1 21:21:50 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:21:58 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:22:06 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:25:31 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:25:45 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:25:50 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:25:55 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:25:58 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:26:01 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:26:06 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:26:09 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:26:12 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:26:15 2022 | jarvis09 a executï¿½ la commande choco
+Sat Oct  1 21:26:18 2022 | jarvis09 a executï¿½ la commande choco
 Sat Oct  1 21:26:33 2022 | Le Choco Bot est en ligne
-Sat Oct  1 21:26:36 2022 | jarvis09 a executé la commande choco, choco choisie:1 
-Sat Oct  1 21:26:38 2022 | jarvis09 a executé la commande choco, choco choisie:3 
-Sat Oct  1 21:26:41 2022 | jarvis09 a executé la commande choco, choco choisie:3 
-Sat Oct  1 21:26:45 2022 | jarvis09 a executé la commande choco, choco choisie:6 
-Sat Oct  1 21:26:49 2022 | jarvis09 a executé la commande choco, choco choisie:7 
-Sat Oct  1 21:26:54 2022 | jarvis09 a executé la commande choco, choco choisie:8 
-Sat Oct  1 21:26:57 2022 | jarvis09 a executé la commande choco, choco choisie:8 
+Sat Oct  1 21:26:36 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:1 
+Sat Oct  1 21:26:38 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:3 
+Sat Oct  1 21:26:41 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:3 
+Sat Oct  1 21:26:45 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:6 
+Sat Oct  1 21:26:49 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:7 
+Sat Oct  1 21:26:54 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:8 
+Sat Oct  1 21:26:57 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:8 
 Sat Oct  1 21:37:27 2022 | Le Choco Bot est en ligne
 Sat Oct  1 21:38:23 2022 | Le Choco Bot est en ligne
 Sat Oct  1 21:39:39 2022 | Le Choco Bot est en ligne
@@ -130,57 +130,74 @@ Sat Oct  1 21:45:38 2022 | Le Choco Bot est en ligne
 Sat Oct  1 21:46:29 2022 | Le Choco Bot est en ligne
 Sat Oct  1 21:46:58 2022 | Le Choco Bot est en ligne
 Sat Oct  1 21:54:36 2022 | Le Choco Bot est en ligne
-Sat Oct  1 21:54:45 2022 | jarvis09 a executé la commande choco, choco choisie:11 
+Sat Oct  1 21:54:45 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:11 
 Sat Oct  1 22:06:35 2022 | Le Choco Bot est en ligne
-Sat Oct  1 22:06:45 2022 | jarvis09 a executé la commande choco, choco choisie:28 
-Sat Oct  1 22:06:47 2022 | jarvis09 a executé la commande choco, choco choisie:25 
-Sat Oct  1 22:06:50 2022 | jarvis09 a executé la commande choco, choco choisie:18 
-Sat Oct  1 22:06:52 2022 | jarvis09 a executé la commande choco, choco choisie:20 
-Sat Oct  1 22:06:55 2022 | jarvis09 a executé la commande choco, choco choisie:7 
-Sat Oct  1 22:09:25 2022 | jarvis09 a executé la commande choco, choco choisie:27 
-Sat Oct  1 22:14:02 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.1821360999999797ms
-Sat Oct  1 22:24:58 2022 | jarvis09 a executé la commande choco, choco choisie:11 
-Sat Oct  1 22:25:36 2022 | jarvis09 a executé la commande choco, choco choisie:25 
-Sat Oct  1 22:25:40 2022 | jarvis09 a executé la commande choco, choco choisie:10 
-Sat Oct  1 22:25:40 2022 | jarvis09 a executé la commande choco, choco choisie:25 
-Sat Oct  1 22:26:08 2022 | commande help enclenchée par jarvis09
-Sat Oct  1 22:26:25 2022 | commande info executée par jarvis09
-Sat Oct  1 22:26:39 2022 | commande about éxécutée par jarvis09
-Sat Oct  1 22:26:43 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.17231259999994109ms
-Sat Oct  1 22:26:54 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 22:06:45 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:28 
+Sat Oct  1 22:06:47 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:25 
+Sat Oct  1 22:06:50 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:18 
+Sat Oct  1 22:06:52 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:20 
+Sat Oct  1 22:06:55 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:7 
+Sat Oct  1 22:09:25 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:27 
+Sat Oct  1 22:14:02 2022 | commande ping enclanchï¿½e par jarvis09, la latene du bot est de 0.1821360999999797ms
+Sat Oct  1 22:24:58 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:11 
+Sat Oct  1 22:25:36 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:25 
+Sat Oct  1 22:25:40 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:10 
+Sat Oct  1 22:25:40 2022 | jarvis09 a executï¿½ la commande choco, choco choisie:25 
+Sat Oct  1 22:26:08 2022 | commande help enclenchï¿½e par jarvis09
+Sat Oct  1 22:26:25 2022 | commande info executï¿½e par jarvis09
+Sat Oct  1 22:26:39 2022 | commande about ï¿½xï¿½cutï¿½e par jarvis09
+Sat Oct  1 22:26:43 2022 | commande ping enclanchï¿½e par jarvis09, la latene du bot est de 0.17231259999994109ms
+Sat Oct  1 22:26:54 2022 | commande help enclenchï¿½e par jarvis09
 Sat Oct  1 22:27:11 2022 | Le Choco Bot est en ligne
-Sat Oct  1 22:27:49 2022 | commande help enclenchée par jarvis09
-Sat Oct  1 22:27:58 2022 | commande say enclanchée par jarvis09 contenant: ('dd',)
-Sat Oct  1 22:28:07 2022 | commande about éxécutée par jarvis09
+Sat Oct  1 22:27:49 2022 | commande help enclenchï¿½e par jarvis09
+Sat Oct  1 22:27:58 2022 | commande say enclanchï¿½e par jarvis09 contenant: ('dd',)
+Sat Oct  1 22:28:07 2022 | commande about ï¿½xï¿½cutï¿½e par jarvis09
 Sat Oct  1 23:00:43 2022 | Le Choco Bot est en ligne
-Sat Oct  1 23:01:52 2022 | commande cristall_ball executée par jarvis09 contenant ('test',)
+Sat Oct  1 23:01:52 2022 | commande cristall_ball executï¿½e par jarvis09 contenant ('test',)
 Sat Oct  1 23:06:56 2022 | Le Choco Bot est en ligne
-Sat Oct  1 23:07:27 2022 | commande cristall_ball executée par jarvis09 contenant . ()
-Sat Oct  1 23:07:44 2022 | commande cristall_ball executée par jarvis09 contenant . ('test', 'ha')
+Sat Oct  1 23:07:27 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ()
+Sat Oct  1 23:07:44 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ('test', 'ha')
 Sat Oct  1 23:08:27 2022 | Le Choco Bot est en ligne
-Sat Oct  1 23:08:36 2022 | commande cristall_ball executée par jarvis09 contenant . ('test', 'haha')
-Sat Oct  1 23:08:38 2022 | commande help enclenchée par FiFolker
-Sat Oct  1 23:09:33 2022 | FiFolker a executé la commande choco, choco choisie:23 
-Sat Oct  1 23:09:40 2022 | FiFolker a executé la commande choco, choco choisie:13 
-Sat Oct  1 23:09:56 2022 | commande cristall_ball executée par jarvis09 contenant . ('est-ce', 'que', 'le', 'choco', 'bot', 'est', 'le', 'meilleur', 'bot', '?')
-Sat Oct  1 23:10:24 2022 | commande cristall_ball executée par jarvis09 contenant . ('est-ce', 'que', 'le', 'choco', 'bot', 'est', 'le', 'meilleur', 'bot', '?')
-Sat Oct  1 23:10:30 2022 | commande cristall_ball executée par jarvis09 contenant . ('est-ce', 'que', 'le', 'choco', 'bot', 'est', 'le', 'meilleur', 'bot', '?')
-Sat Oct  1 23:10:33 2022 | commande cristall_ball executée par jarvis09 contenant . ('est-ce', 'que', 'le', 'choco', 'bot', 'est', 'le', 'meilleur', 'bot', '?')
+Sat Oct  1 23:08:36 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ('test', 'haha')
+Sat Oct  1 23:08:38 2022 | commande help enclenchï¿½e par FiFolker
+Sat Oct  1 23:09:33 2022 | FiFolker a executï¿½ la commande choco, choco choisie:23 
+Sat Oct  1 23:09:40 2022 | FiFolker a executï¿½ la commande choco, choco choisie:13 
+Sat Oct  1 23:09:56 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ('est-ce', 'que', 'le', 'choco', 'bot', 'est', 'le', 'meilleur', 'bot', '?')
+Sat Oct  1 23:10:24 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ('est-ce', 'que', 'le', 'choco', 'bot', 'est', 'le', 'meilleur', 'bot', '?')
+Sat Oct  1 23:10:30 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ('est-ce', 'que', 'le', 'choco', 'bot', 'est', 'le', 'meilleur', 'bot', '?')
+Sat Oct  1 23:10:33 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ('est-ce', 'que', 'le', 'choco', 'bot', 'est', 'le', 'meilleur', 'bot', '?')
 Sat Oct  1 23:14:59 2022 | Le Choco Bot est en ligne
-Sat Oct  1 23:15:10 2022 | commande cristall_ball executée par jarvis09 contenant . ('test',)
-Sat Oct  1 23:15:15 2022 | commande help enclenchée par jarvis09
+Sat Oct  1 23:15:10 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ('test',)
+Sat Oct  1 23:15:15 2022 | commande help enclenchï¿½e par jarvis09
 Sun Oct  2 11:00:39 2022 | Le Choco Bot est en ligne
-Sun Oct  2 11:01:51 2022 | commande cristall_ball executée par jarvis09 contenant . ('chocolatine', 'ou', 'pain', 'au', 'chocolat', '?')
+Sun Oct  2 11:01:51 2022 | commande cristall_ball executï¿½e par jarvis09 contenant . ('chocolatine', 'ou', 'pain', 'au', 'chocolat', '?')
 Sun Oct  2 11:31:24 2022 | Le Choco Bot est en ligne
 Sun Oct  2 11:56:54 2022 | Le Choco Bot est en ligne
 Sun Oct  2 12:01:14 2022 | Le Choco Bot est en ligne
-Sun Oct  2 12:01:25 2022 | commande info executée par jarvis09
-Sun Oct  2 12:01:27 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.4311720999994577ms
+Sun Oct  2 12:01:25 2022 | commande info executï¿½e par jarvis09
+Sun Oct  2 12:01:27 2022 | commande ping enclanchï¿½e par jarvis09, la latene du bot est de 0.4311720999994577ms
 Sun Oct  2 12:03:59 2022 | Le Choco Bot est en ligne
 Sun Oct  2 15:15:57 2022 | Le Choco Bot est en ligne
+Sun Oct  2 16:29:16 2022 | Le Choco Bot est en ligne
+Sun Oct  2 16:29:26 2022 | commande help enclenchï¿½e par FiFolker
+Sun Oct  2 16:30:16 2022 | commande ping enclanchï¿½e par FiFolker, la latene du bot est de 0.11649740000029851ms
 Sun Oct  2 16:18:30 2022 | Le Choco Bot est en ligne
-Sun Oct  2 16:18:37 2022 | commande help enclenchée par jarvis09
-Sun Oct  2 16:29:21 2022 | commande help enclenchée par FiFolker
-Sun Oct  2 16:29:45 2022 | commande help enclanchée par FiFolker
-Sun Oct  2 16:30:11 2022 | commande ping enclanchée par FiFolker, la latene du bot est de 0.1647612000015215ms
+Sun Oct  2 16:18:37 2022 | commande help enclenchï¿½e par jarvis09
+Sun Oct  2 16:29:21 2022 | commande help enclenchï¿½e par FiFolker
+Sun Oct  2 16:29:45 2022 | commande help enclanchï¿½e par FiFolker
+Sun Oct  2 16:30:11 2022 | commande ping enclanchï¿½e par FiFolker, la latene du bot est de 0.1647612000015215ms
 Sun Oct  2 16:37:51 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:20:56 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:22:04 2022 | commande help enclenchée par FiFolker
+Sun Oct  2 17:22:45 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:24:16 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:26:37 2022 | commande help enclenchée par FiFolker
+Sun Oct  2 17:26:41 2022 | FiFolker a executé la commande joke, choco choisie:8 
+Sun Oct  2 17:29:21 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:30:50 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:37:30 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:37:45 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:37:49 2022 | commande help enclenchée par FiFolker
+Sun Oct  2 17:37:58 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:39:27 2022 | Le Choco Bot est en ligne
+Sun Oct  2 17:46:00 2022 | Le Choco Bot est en ligne

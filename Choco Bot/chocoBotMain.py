@@ -8,27 +8,57 @@ from discord.ext import commands
 import os
 import random
 from chocodico import *
+
 intents = discord.Intents.all()  # intents, je ne sais pas trop à quoi ça sert, mais sans mon code marche pas
+intents_default = discord.Intents.default()
+intents_default.members = True
+client = discord.Client(intents=intents_default)
 bot = commands.Bot(command_prefix="-", intents=intents)  # le préfixe et leur truc barbare
 bot.remove_command('help')  # j'ai ma propre commande help
 
+# Constante (parce qu'on les met partout)
+RICKROLL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+FOOTER = "Team Chocolatine"
+
+
+###################################
 
 def log(msg):
     with open("bot_logs.txt", "a+") as log_it:
         heure = time.ctime()  # Un truc utile pour mettre des heures dans les logs !
         log_it.write(f"{heure} | {msg}\n")
 
+
 cant_use_cmd = discord.Embed(title="Attention, vous n'avez pas accès a cette commande", color=0xedf305)
-cant_use_cmd.set_author(name="Vous ne pouvez pas utiliser cette commande !", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+cant_use_cmd.set_author(name="Vous ne pouvez pas utiliser cette commande !", url=RICKROLL)
 cant_use_cmd.set_thumbnail(url="https://media.tenor.com/4qOJaZloJj4AAAAj/tag.gif")
-cant_use_cmd.set_footer(text="Team Chocolatine")
+cant_use_cmd.set_footer(text=FOOTER)
 
 
 @bot.event
 async def on_ready():
-    print("Le Choco bot est en ligne")
+    print("Le Choco Bot est en ligne")
     log("Le Choco Bot est en ligne")
 # rien de spécial, juste un msg pour dire que le bot est en ligne (qui est aussi envoyé dans la console !)
+
+
+@client.event
+async def on_member_join(member):
+    arrival: discord.TextChannel = client.get_channel(1009442645162070066)
+    admin: discord.TextChannel = client.get_channel(1009410836814639137)
+    await admin.send(content=f"Salut{member.display_name}")
+    embed = discord.Embed(title="**__Bienvenue !__**",
+                          description=f"Bienvenue @{member.display_name} sur le serveur de la Team Chocolatine rends-toi dans le salon #règlement pour avoir accès à l'entièreté du serveur",
+                          color=0xe9c46a)
+    embed.set_thumbnail(url="ChoBot_clair.png")
+    embed.set_footer(text=FOOTER)
+    await arrival.send(content=f"test {member.display_name}")
+
+
+@client.event
+async def on_member_leave(member):
+    departure = client.get_channel(1009442645162070066)
+    await departure.send(content=f"test2 {member.display_name}")
 
 
 @bot.command()  # commande help
@@ -42,21 +72,21 @@ async def help(ctx):
  -about: donne des informations à propos du bot
  -ping: permet de connaitre la latence du bot\n					
 **MODÉRATION:**
-***NOTE: les commandes de la section MODÉRATION sonts uniquement utilisables par les Administrateurs***       
+***NOTE: les commandes de la section MODÉRATION sont uniquement utilisables par les Administrateurs***       
  -ban [@utilisateur] [raison]: ban l'utilisateur mentionné
  -unban [@utilisateur] [raison]: déban l'utilisateur mentionné
- -mute [@utilisateur] [raison]: rend muet l'utilisateur mentioné
+ -mute [@utilisateur] [raison]: rend muet l'utilisateur mentionné
  -unmute [@utilisateur]: démute la personne mentionnée
  -kick [@utilisateur] [raison]: expulse l'utilisateur mentionné\n
  **FUN:**
-*ces commandes peuvent être utlisées par tout les utilisateurs*
+*ces commandes peuvent être utilisées par tout les utilisateurs*
 -cristal_ball [texte]: répond a vos questions (texte après la cmd) a l'aide de sa boule magique...
 -say [texte] renvoie que vous avez écrit après la commande
 -choco envoie une image de chocolatine aléatoirement
     """, color=0x008000)
-    embed.set_author(name="AIDE RELATIVE AUX COMMANDES", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    embed.set_author(name="AIDE RELATIVE AUX COMMANDES", url=RICKROLL)
     embed.set_thumbnail(url="https://media.tenor.com/GXMu0NRMHQgAAAAC/question-mark.gif")
-    embed.set_footer(text="Team Chocolatine")
+    embed.set_footer(text=FOOTER)
     await ctx.send(embed=embed)
 
 
@@ -81,25 +111,24 @@ async def cristal_ball(ctx, *msg):
     log(f"commande cristall_ball executée par {ctx.author.name} contenant . {msg}")
     print(f"commande cristall_ball executée par {ctx.author.name} contenant {msg}")
     msg = " ".join(msg)
-    cristal_choice = random.randrange(1,9) #choisis une choco random
     rdm_cristal = random.choice(list(cristal_dico))
-    embed = discord.Embed(title="**QUESTION:**", description=f"{msg}"   , color=0x8005fa)
+    embed = discord.Embed(title="**QUESTION:**", description=f"{msg}", color=0x8005fa)
     embed.set_author(name="8ball")
     embed.set_thumbnail(url="https://emojis.wiki/emoji-pics/microsoft/crystal-ball-microsoft.png")
     embed.add_field(name="RÉPONSE:", value=f"{cristal_dico[rdm_cristal]}", inline=True)
-    embed.set_footer(text="Team Chocolatine - Attention, les réponses sont aléatoires ne pas les prendre au sérieux !")
+    embed.set_footer(text=FOOTER + " - Attention, les réponses sont aléatoires ne pas les prendre au sérieux !")
     await ctx.send(embed=embed)
 
 
 @bot.command()
 async def about(ctx):  # commande about
-    log(f"commande about éxécutée par {ctx.author.name}")
+    log(f"commande about exécutée par {ctx.author.name}")
     embed = discord.Embed(
         title="Le Choco bot est un bot discord dédié au serveur Team Chocolatine (https://discord.gg/wZ5aNWk33y) il a été développé par jarvis09#1787 & FiFolker#9350",
         color=0xff0000)
-    embed.set_author(name="A propos du chocobot", url="https://discord.gg/wZ5aNWk33y")
+    embed.set_author(name="A propos du Choco Bot", url="https://discord.gg/wZ5aNWk33y")
     embed.set_thumbnail(url="https://media.tenor.com/b7HjoHE1K4QAAAAj/i%CC%87nfo-icon.gif")
-    embed.set_footer(text="Team Chocolatine")
+    embed.set_footer(text=FOOTER)
     await ctx.send(embed=embed)
 
 
@@ -119,9 +148,9 @@ async def rick(ctx):  # ma commande (qui rickroll, marche que pour mon ID et cel
 @bot.command()  # la commande ping, celle qui utilise le module time
 async def ping(ctx):
     embed = discord.Embed(title=f"latence de {bot.latency}ms !", color=0x340cf3)
-    embed.set_author(name="Pong !", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    embed.set_author(name="Pong !", url=RICKROLL)
     embed.set_thumbnail(url="https://media.tenor.com/c9WptHOa_LMAAAAM/pong.gif")
-    embed.set_footer(text="Team Chocolatine")
+    embed.set_footer(text=FOOTER)
     await ctx.send(embed=embed)
     print(f"commande ping enclanchée par {ctx.author.name} !")
     log(f"commande ping enclanchée par {ctx.author.name}, la latene du bot est de {bot.latency}ms")
@@ -130,9 +159,9 @@ async def ping(ctx):
 @bot.command()
 async def info(ctx):  # quelques infos à propos du serveur
     serveur = ctx.guild
-    ServName = serveur.name
-    Nofofmembers = serveur.member_count
-    msg = f"Le serveur **{ServName}** a **{Nofofmembers}** membres !"
+    serv_name = serveur.name
+    nb_of_members = serveur.member_count
+    msg = f"Le serveur **{serv_name}** a **{nb_of_members}** membres !"
     await ctx.send(msg)
     print(f"commande info enclanchée par {ctx.author.name} !")
     log(f"commande info executée par {ctx.author.name}")
@@ -141,8 +170,8 @@ async def info(ctx):  # quelques infos à propos du serveur
 @bot.command()  # un truc pr le fun comme ça
 async def say(ctx, *txt):
     await ctx.send(" ".join(txt))
-    print(f"commande say enclanchée par {ctx.author.name} contenant: {txt} !")
-    log(f"commande say enclanchée par {ctx.author.name} contenant: {txt}")
+    print(f"commande say enclenchée par {ctx.author.name} contenant: {txt} !")
+    log(f"commande say enclenchée par {ctx.author.name} contenant: {txt}")
 
 
 @bot.command()  # pour kick les gens, même si bon sans se mentir le kick de discord fait le job
@@ -150,11 +179,12 @@ async def kick(ctx, user: discord.User, *reason):
     if ctx.message.author.guild_permissions.administrator:
         reason = " ".join(reason)
         await ctx.guild.kick(user, reason=reason)
-        embed = discord.Embed(title=f"{user} a été kick pour la raison {reason}, que cella lui serve de leçon !", color=0xedf305)
-        embed.set_author(name="KICK !", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
+        embed = discord.Embed(title=f"{user} a été kick pour la raison {reason}, que cella lui serve de leçon !",
+                              color=0xedf305)
+        embed.set_author(name="KICK !", url=RICKROLL,
+                         icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
         embed.set_thumbnail(url="https://media.tenor.com/sWGfjLcAEDwAAAAC/kick-cartoon.gif")
-        embed.set_footer(text="Team Chocolatine")
+        embed.set_footer(text=FOOTER)
         await ctx.send(embed=embed)
         ctx.send(embed=embed)
 
@@ -172,11 +202,12 @@ async def ban(ctx, user: discord.User, *reason):
     reason = " ".join(reason)
     if ctx.message.author.guild_permissions.administrator:
         await ctx.guild.ban(user, reason=reason)
-        ban_embed = discord.Embed(title=f"{user} a été banni pour la raison: {reason} que cella lui serve de leçon !", color=0xff0000)
-        ban_embed.set_author(name="BAN !", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        ban_embed = discord.Embed(title=f"{user} a été banni pour la raison: {reason} que cella lui serve de leçon !",
+                                  color=0xff0000)
+        ban_embed.set_author(name="BAN !", url=RICKROLL,
                              icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
         ban_embed.set_thumbnail(url="https://media.tenor.com/Kt1irdU_daUAAAAS/ban-admin.gif")
-        ban_embed.set_footer(text="Team Chocolatine")
+        ban_embed.set_footer(text=FOOTER)
         await ctx.send(embed=ban_embed)
         print(f"{ctx.author.name} a utilisé la commande ban sur {user} pour la raison {reason} !")
         log(f"{ctx.author.name} a tenté d'utiliser la commande ban sur {user} pour la raison {reason} !")
@@ -192,17 +223,17 @@ async def ban(ctx, user: discord.User, *reason):
 async def unban(ctx, user, *reason):
     if ctx.message.author.guild_permissions.administrator:
         reason = " ".join(reason)
-        nom, userID = user.split("#")
-        bannedUsers = await ctx.guild.bans()
+        nom, user_id = user.split("#")
+        banned_users = await ctx.guild.bans()
         member = discord.Member
-        for i in bannedUsers:
-            if i.user.name == nom and i.user.discriminator == userID:
+        for i in banned_users:
+            if i.user.name == nom and i.user.discriminator == user_id:
                 await ctx.guild.unban(i.user.discriminator, reason=reason)
                 embed = discord.Embed(title=f"{member} a été unban par {ctx.author.name} pour la raison: {reason} !",
                                       color=0x1111e8)
-                embed.set_author(name="UNBAN", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+                embed.set_author(name="UNBAN", url=RICKROLL)
                 embed.set_thumbnail(url="https://media.tenor.com/_4K_0sndwtEAAAAi/green-white.gif")
-                embed.set_footer(text="Team Chocolatine")
+                embed.set_footer(text=FOOTER)
                 await ctx.send(embed=embed)
                 print(f"{ctx.author.name} a utilisé la commande deban ban sur {user} pour la raison {reason} !")
                 log(f"{ctx.author.name} a utilisé la commande deban sur {user} pour la raison {reason}")
@@ -220,19 +251,21 @@ async def unban(ctx, user, *reason):
 @bot.command()  # juste le mute
 async def mute(ctx, member: discord.Member, *, reason=None):
     guild = ctx.guild
-    mutedRole = discord.utils.get(guild.roles, name="Muted")
+    muted_role = discord.utils.get(guild.roles, name="Muted")
 
     if ctx.message.author.guild_permissions.administrator:
-        if not mutedRole:
-            mutedRole = await guild.create_role(name="Muted")
+        if not muted_role:
+            muted_role = await guild.create_role(name="Muted")
 
             for channel in guild.channels:
-                await channel.set_permissions(mutedRole, speak=False, send_messages=False, read_message_history=True, read_messages=False)
-        await member.add_roles(mutedRole, reason=reason)
-        embed = discord.Embed(title=f"{member} a été mute pour la raison: {reason}, que cela lui serve de leçon !", color=0x1111e8)
-        embed.set_author(name="MUTE !", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+                await channel.set_permissions(muted_role, speak=False, send_messages=False, read_message_history=True,
+                                              read_messages=False)
+        await member.add_roles(muted_role, reason=reason)
+        embed = discord.Embed(title=f"{member} a été mute pour la raison: {reason}, que cela lui serve de leçon !",
+                              color=0x1111e8)
+        embed.set_author(name="MUTE !", url=RICKROLL)
         embed.set_thumbnail(url="https://media.tenor.com/FWh2E4AQyTEAAAAM/mute.gif")
-        embed.set_footer(text="Team Chocolatine")
+        embed.set_footer(text=FOOTER)
         await ctx.send(embed=embed)
         log(f"{ctx.author.name} a rendu muet {member}* pour la raison **{reason}")
         print(f"**{ctx.author.name} a rendu muet {member.mention} pour la raison:** *{reason}*")
@@ -247,13 +280,13 @@ async def mute(ctx, member: discord.Member, *, reason=None):
 @bot.command()  # unmute
 async def unmute(ctx, member: discord.Member):
     if ctx.message.author.guild_permissions.administrator:
-        mutedRole = discord.utils.get(ctx.guild.roles, name="Muted")
+        muted_role = discord.utils.get(ctx.guild.roles, name="Muted")
 
-        await member.remove_roles(mutedRole)
+        await member.remove_roles(muted_role)
         embed = discord.Embed(title=f"{member} a été unmute par {ctx.author.name} !", color=0x1111e8)
-        embed.set_author(name="UNMUTE", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        embed.set_author(name="UNMUTE", url=RICKROLL)
         embed.set_thumbnail(url="https://media.tenor.com/rZRx_DyeF8sAAAAi/symbols.gif")
-        embed.set_footer(text="Team Chocolatine")
+        embed.set_footer(text=FOOTER)
         await ctx.send(embed=embed)
         await member.send(f"Vous avez été unmute du serveur **{ctx.guild.name}** par **{ctx.author.name}**")
     else:
