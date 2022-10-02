@@ -10,9 +10,7 @@ import random
 from chocodico import *
 
 intents = discord.Intents.all()  # intents, je ne sais pas trop à quoi ça sert, mais sans mon code marche pas
-intents_default = discord.Intents.default()
-intents_default.members = True
-client = discord.Client(intents=intents_default)
+intents.members = True
 bot = commands.Bot(command_prefix="-", intents=intents)  # le préfixe et leur truc barbare
 bot.remove_command('help')  # j'ai ma propre commande help
 
@@ -42,23 +40,27 @@ async def on_ready():
 # rien de spécial, juste un msg pour dire que le bot est en ligne (qui est aussi envoyé dans la console !)
 
 
-@client.event
+@bot.event
 async def on_member_join(member):
-    arrival: discord.TextChannel = client.get_channel(1009442645162070066)
-    admin: discord.TextChannel = client.get_channel(1009410836814639137)
-    await admin.send(content=f"Salut{member.display_name}")
+    arrival: discord.TextChannel = bot.get_channel(1009442645162070066)
+    rules: discord.TextChannel = bot.get_channel(1009411624991473785)
     embed = discord.Embed(title="**__Bienvenue !__**",
-                          description=f"Bienvenue @{member.display_name} sur le serveur de la Team Chocolatine rends-toi dans le salon #règlement pour avoir accès à l'entièreté du serveur",
+                          description=f"Bienvenue {member.mention} sur le serveur de la Team Chocolatine rends-toi dans le salon {rules.mention} pour avoir accès à l'entièreté du serveur",
                           color=0xe9c46a)
-    embed.set_thumbnail(url="ChoBot_clair.png")
+    embed.set_thumbnail(url="https://i.goopics.net/ghlhkb.png")
     embed.set_footer(text=FOOTER)
-    await arrival.send(content=f"test {member.display_name}")
+    await arrival.send(embed=embed)
 
 
-@client.event
-async def on_member_leave(member):
-    departure = client.get_channel(1009442645162070066)
-    await departure.send(content=f"test2 {member.display_name}")
+@bot.event
+async def on_member_remove(member):
+    departure = bot.get_channel(1009442645162070066)
+    embed = discord.Embed(title="**Au revoir !__**",
+                          description=f"Au revoir {member.mention} et peut être à bientôt sur le serveur de la Team Chocolatine !",
+                          color=0xBD3100)
+    embed.set_thumbnail(url="https://i.goopics.net/ghlhkb.png")
+    embed.set_footer(text=FOOTER)
+    await departure.send(embed=embed)
 
 
 @bot.command()  # commande help
