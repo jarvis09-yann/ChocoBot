@@ -69,6 +69,14 @@ async def choco(ctx):
 
 
 @bot.command()
+async def joke(ctx):
+    joke_choice = random.choice(list(joke_dico))
+    await ctx.send(joke_dico[f"{joke_choice}"])
+    log(f"{ctx.author.name} a executé la commande joke, choco choisie:{joke_choice} ")
+    print(f"{ctx.author.name} a executé la commande joke, choco choisie: {joke_choice} ")
+
+
+@bot.command()
 async def cristal_ball(ctx, *msg):
     log(f"commande cristall_ball executée par {ctx.author.name} contenant . {msg}")
     print(f"commande cristall_ball executée par {ctx.author.name} contenant {msg}")
