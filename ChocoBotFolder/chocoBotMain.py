@@ -18,7 +18,7 @@ bot.remove_command('help')  # j'ai ma propre commande help
 RICKROLL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 FOOTER = "Team Chocolatine"
 LOGO_CHOCOBOT = "https://i.goopics.net/ghlhkb.png"
-
+BAN_HAMMER = "https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless"
 
 ###################################
 
@@ -69,7 +69,8 @@ async def on_member_ban(guild, user):
     arrival_departure: discord.TextChannel = bot.get_channel(1009442645162070066)
     embed = discord.Embed(title="**__BAN !__**",
                           description=f"{user.mention} s'est fait bannir du serveur {guild.name} !",
-                          color=0xBD3100, icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
+                          color=0xBD3100)
+    embed.set_author(name="ban", icon_url=BAN_HAMMER)
     embed.set_thumbnail(url=LOGO_CHOCOBOT)
     embed.set_footer(text=FOOTER)
     await arrival_departure.send(embed=embed)
@@ -197,7 +198,7 @@ async def kick(ctx, user: discord.User, *reason):
         embed = discord.Embed(title=f"{user} a été kick pour la raison {reason}, que cela lui serve de leçon !",
                               color=0xedf305)
         embed.set_author(name="KICK !", url=RICKROLL,
-                         icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
+                         icon_url= BAN_HAMMER)
         embed.set_thumbnail(url="https://media.tenor.com/sWGfjLcAEDwAAAAC/kick-cartoon.gif")
         embed.set_footer(text=FOOTER)
         await ctx.send(embed=embed)
@@ -220,7 +221,7 @@ async def ban(ctx, user: discord.User, *reason):
         ban_embed = discord.Embed(title=f"{user} a été banni pour la raison: {reason} que cela lui serve de leçon !",
                                   color=0xff0000)
         ban_embed.set_author(name="BAN !", url=RICKROLL,
-                             icon_url="https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128&quality=lossless")
+                             icon_url=BAN_HAMMER)
         ban_embed.set_thumbnail(url="https://media.tenor.com/Kt1irdU_daUAAAAS/ban-admin.gif")
         ban_embed.set_footer(text=FOOTER)
         await ctx.send(embed=ban_embed)
