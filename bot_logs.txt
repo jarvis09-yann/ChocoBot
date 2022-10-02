@@ -172,3 +172,8 @@ Sat Oct  1 23:15:15 2022 | commande help enclenchée par jarvis09
 Sun Oct  2 11:00:39 2022 | Le Choco Bot est en ligne
 Sun Oct  2 11:01:51 2022 | commande cristall_ball executée par jarvis09 contenant . ('chocolatine', 'ou', 'pain', 'au', 'chocolat', '?')
 Sun Oct  2 11:31:24 2022 | Le Choco Bot est en ligne
+Sun Oct  2 11:56:54 2022 | Le Choco Bot est en ligne
+Sun Oct  2 12:01:14 2022 | Le Choco Bot est en ligne
+Sun Oct  2 12:01:25 2022 | commande info executée par jarvis09
+Sun Oct  2 12:01:27 2022 | commande ping enclanchée par jarvis09, la latene du bot est de 0.4311720999994577ms
+Sun Oct  2 12:03:59 2022 | Le Choco Bot est en ligne
