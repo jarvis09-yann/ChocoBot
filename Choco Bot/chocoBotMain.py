@@ -7,10 +7,8 @@ import discord
 from discord.ext import commands
 import os
 import random
-import chocodico # dico de liens d'images pour la cmd choco
-from chocodico import dico
-from  chocodico import cristal_dico
-intents = discord.Intents.all()  # intents, je sais trops a quoi sa sert mais sans mon code marche pas
+from chocodico import *
+intents = discord.Intents.all()  # intents, je ne sais pas trop à quoi ça sert, mais sans mon code marche pas
 bot = commands.Bot(command_prefix="$", intents=intents)  # le préfixe et leur truc barbare
 bot.remove_command('help')  # j'ai ma propre commande help
 
@@ -20,8 +18,8 @@ def log(msg):
         heure = time.ctime()  # Un truc utile pour mettre des heures dans les logs !
         log_it.write(f"{heure} | {msg}\n")
 
-cant_use_cmd=discord.Embed(title="Attention, vous n'avez pas accès a cette commande", color=0xedf305)
-cant_use_cmd.set_author(name="Vous ne pouvez pas utiliser cette commande !",url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+cant_use_cmd = discord.Embed(title="Attention, vous n'avez pas accès a cette commande", color=0xedf305)
+cant_use_cmd.set_author(name="Vous ne pouvez pas utiliser cette commande !", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 cant_use_cmd.set_thumbnail(url="https://media.tenor.com/4qOJaZloJj4AAAAj/tag.gif")
 cant_use_cmd.set_footer(text="Team Chocolatine")
 
@@ -30,7 +28,7 @@ cant_use_cmd.set_footer(text="Team Chocolatine")
 async def on_ready():
     print("Le Choco bot est en ligne")
     log("Le Choco Bot est en ligne")
-# rien de spécial, juste un msg pour dire que  le bot est en ligne (qui est aussi envoyé dans la console !)
+# rien de spécial, juste un msg pour dire que le bot est en ligne (qui est aussi envoyé dans la console !)
 
 
 @bot.command()  # commande help
@@ -64,11 +62,11 @@ $choco envoie une image de chocolatine aléatoirement
 
 @bot.command()
 async def choco(ctx):
-    choco_choice = random.randrange(1,29) #choisis une choco random
     rdm_choco = random.choice(list(dico))
     await ctx.send(dico[f"{rdm_choco}"])
     log(f"{ctx.author.name} a executé la commande choco, choco choisie:{rdm_choco} ")
     print(f"{ctx.author.name} a executé la commande choco, choco choisie: {rdm_choco} ")
+
 
 @bot.command()
 async def cristal_ball(ctx, *msg):
@@ -81,7 +79,7 @@ async def cristal_ball(ctx, *msg):
     embed.set_author(name="8ball")
     embed.set_thumbnail(url="https://emojis.wiki/emoji-pics/microsoft/crystal-ball-microsoft.png")
     embed.add_field(name="RÉPONSE:", value=f"{cristal_dico[rdm_cristal]}", inline=True)
-    embed.set_footer(text="Team Chocolatine - Attention, les réponses sonts aléatoires ne pas les prendre au sérieux !")
+    embed.set_footer(text="Team Chocolatine - Attention, les réponses sont aléatoires ne pas les prendre au sérieux !")
     await ctx.send(embed=embed)
 
 
@@ -101,7 +99,7 @@ async def about(ctx):  # commande about
 async def rick(ctx):  # ma commande (qui rickroll, marche que pour mon ID et celui de fifolker)
     if ctx.author.id == 721399612526559245 or 237588446397333505:
         await ctx.message.delete(
-        )  # pour cacher les preuves, après ya les logs du discord et le shell biensur
+        )  # pour cacher les preuves, après y a les logs du discord et le shell biensur
         await ctx.send("**Vous avez été rickrollé !** ")
         await ctx.send(
             "\n https://tenor.com/view/rickroll-roll-rick-never-gonna-give-you-up-never-gonna-gif-22954713"
@@ -122,7 +120,7 @@ async def ping(ctx):
 
 
 @bot.command()
-async def info(ctx):  # quelques infos a propos du serveur
+async def info(ctx):  # quelques infos à propos du serveur
     serveur = ctx.guild
     ServName = serveur.name
     Nofofmembers = serveur.member_count
@@ -158,7 +156,7 @@ async def kick(ctx, user: discord.User, *reason):
         await ctx.send(embed=cant_use_cmd)
         print(f"{ctx.author.name} a tenté d'utiliser la commande kick sur {user} pour la raison {reason} !")
         log(f"""{ctx.author.name} a tenté d'utiliser la commande kick sur {user} pour la raison {reason},
-            mais il n'avait pas la permission amdinistrateur donc la commande a échouée.""")
+            mais il n'avait pas la permission administrateur donc la commande a échouée.""")
 
 
 @bot.command()  # pour ban
@@ -177,9 +175,9 @@ async def ban(ctx, user: discord.User, *reason):
     else:
         await ctx.send(embed=cant_use_cmd)
         log(f"""{ctx.author.name} a tenté d'utiliser la commande ban sur {user} pour la raison {reason},
-        mais il n'avait pas la permission amdinistrateur donc la commande a échouée.""")
+        mais il n'avait pas la permission administrateur donc la commande a échouée.""")
         print(f"""{ctx.author.name} a tenté d'utiliser la commande ban sur {user} pour la raison {reason},
-        mais il n'avait pas la permission amdinistrateur donc la commande a échouée.""")
+        mais il n'avait pas la permission administrateur donc la commande a échouée.""")
 
 
 @bot.command()  # pour déban
@@ -188,6 +186,7 @@ async def unban(ctx, user, *reason):
         reason = " ".join(reason)
         nom, userID = user.split("#")
         bannedUsers = await ctx.guild.bans()
+        member = discord.Member
         for i in bannedUsers:
             if i.user.name == nom and i.user.discriminator == userID:
                 await ctx.guild.unban(i.user.discriminator, reason=reason)
@@ -207,7 +206,7 @@ async def unban(ctx, user, *reason):
     else:
         await ctx.send(embed=cant_use_cmd)
         print(f"""{ctx.author.name} a tenté d'utiliser la commande unban sur {user} pour la raison {reason}
-            mais il n'avait pas la permission amdinistrateur donc la commande a échouée.""")
+            mais il n'avait pas la permission administrateur donc la commande a échouée.""")
 
 
 @bot.command()  # juste le mute
@@ -233,8 +232,8 @@ async def mute(ctx, member: discord.Member, *, reason=None):
             f"Vous avez été rendu muet sur le serveur **{guild.name}** pour la raison: **{reason}**")
     else:
         await ctx.send(embed=cant_use_cmd)
-        log(f"""{ctx.author.name} a tenté de rendre muet {membre} pour la raison {reason},
-            mais il n'avait pas la permission amdinistrateur donc la commande a échouée.""")
+        log(f"""{ctx.author.name} a tenté de rendre muet {member} pour la raison {reason},
+            mais il n'avait pas la permission administrateur donc la commande a échouée.""")
 
 
 @bot.command()  # unmute
@@ -252,7 +251,7 @@ async def unmute(ctx, member: discord.Member):
     else:
         await ctx.send(embed=cant_use_cmd)
         log(f"""{ctx.author.name} a tenté de unmute {member},
-        mais il n'avait pas la permission amdinistrateur donc la commande a échouée.""")
+        mais il n'avait pas la permission administrateur donc la commande a échouée.""")
 
 
 bot.run("MTAxODIwMzQ4NjY2NTU4NDc1MQ.GTbWxn.UFpARrCDkfNcb9zWikd3htT6MkDSw1OR-4rYHs")
