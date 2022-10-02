@@ -9,7 +9,7 @@ import os
 import random
 from chocodico import *
 intents = discord.Intents.all()  # intents, je ne sais pas trop à quoi ça sert, mais sans mon code marche pas
-bot = commands.Bot(command_prefix="$", intents=intents)  # le préfixe et leur truc barbare
+bot = commands.Bot(command_prefix="-", intents=intents)  # le préfixe et leur truc barbare
 bot.remove_command('help')  # j'ai ma propre commande help
 
 
@@ -36,23 +36,23 @@ async def help(ctx):
     log(f"commande help enclenchée par {ctx.author.name}")
     print(f"commande help enclenchée par {ctx.author.name}")  # les logs de la console
     embed = discord.Embed(description="""
-        *Préfixe:* _**$**_\n
+        *Préfixe:* _**-**_\n
 **UTILITAIRE:**
- $info: affiche le nombre de membres sur le serveur
- $about: donne des informations à propos du bot
- $ping: permet de connaitre la latence du bot\n					
+ -info: affiche le nombre de membres sur le serveur
+ -about: donne des informations à propos du bot
+ -ping: permet de connaitre la latence du bot\n					
 **MODÉRATION:**
 ***NOTE: les commandes de la section MODÉRATION sonts uniquement utilisables par les Administrateurs***       
- $ban [@utilisateur] [raison]: ban l'utilisateur mentionné
- $unban [@utilisateur] [raison]: déban l'utilisateur mentionné
- $mute [@utilisateur] [raison]: rend muet l'utilisateur mentioné
- $unmute [@utilisateur]: démute la personne mentionnée
- $kick [@utilisateur] [raison]: expulse l'utilisateur mentionné\n
+ -ban [@utilisateur] [raison]: ban l'utilisateur mentionné
+ -unban [@utilisateur] [raison]: déban l'utilisateur mentionné
+ -mute [@utilisateur] [raison]: rend muet l'utilisateur mentioné
+ -unmute [@utilisateur]: démute la personne mentionnée
+ -kick [@utilisateur] [raison]: expulse l'utilisateur mentionné\n
  **FUN:**
 *ces commandes peuvent être utlisées par tout les utilisateurs*
-$cristal_ball [texte]: répond a vos questions (texte après la cmd) a l'aide de sa boule magique...
-$say [texte] renvoie que vous avez écrit après la commande
-$choco envoie une image de chocolatine aléatoirement
+-cristal_ball [texte]: répond a vos questions (texte après la cmd) a l'aide de sa boule magique...
+-say [texte] renvoie que vous avez écrit après la commande
+-choco envoie une image de chocolatine aléatoirement
     """, color=0x008000)
     embed.set_author(name="AIDE RELATIVE AUX COMMANDES", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     embed.set_thumbnail(url="https://media.tenor.com/GXMu0NRMHQgAAAAC/question-mark.gif")
