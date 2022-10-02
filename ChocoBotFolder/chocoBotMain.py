@@ -10,12 +10,14 @@ from chocodico import *
 
 intents = discord.Intents.all()  # intents, je ne sais pas trop à quoi ça sert, mais sans mon code marche pas
 intents.members = True
+intents.bans = True
 bot = commands.Bot(command_prefix="-", intents=intents)  # le préfixe et leur truc barbare
 bot.remove_command('help')  # j'ai ma propre commande help
 
 # Constante (parce qu'on les met partout)
 RICKROLL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 FOOTER = "Team Chocolatine"
+LOGO_CHOCOBOT = "https://i.goopics.net/ghlhkb.png"
 
 
 ###################################
@@ -46,7 +48,7 @@ async def on_member_join(member):
     embed = discord.Embed(title="**__Bienvenue !__**",
                           description=f"Bienvenue {member.mention} sur le serveur de la Team Chocolatine rends-toi dans le salon {rules.mention} pour avoir accès à l'entièreté du serveur",
                           color=0xe9c46a)
-    embed.set_thumbnail(url="https://i.goopics.net/ghlhkb.png")
+    embed.set_thumbnail(url=LOGO_CHOCOBOT)
     embed.set_footer(text=FOOTER)
     await arrival.send(embed=embed)
 
@@ -57,9 +59,20 @@ async def on_member_remove(member):
     embed = discord.Embed(title="**Au revoir !__**",
                           description=f"Au revoir {member.mention} et peut être à bientôt sur le serveur de la Team Chocolatine !",
                           color=0xBD3100)
-    embed.set_thumbnail(url="https://i.goopics.net/ghlhkb.png")
+    embed.set_thumbnail(url=LOGO_CHOCOBOT)
     embed.set_footer(text=FOOTER)
     await departure.send(embed=embed)
+
+
+@bot.event
+async def on_member_ban(guild, user):
+    arrival_departure: discord.TextChannel = bot.get_channel(1009442645162070066)
+    embed = discord.Embed(title="**__BAN !__**",
+                          description=f"{user.mention} s'est fait bannir du serveur {guild.name} !",
+                          color=0xBD3100)
+    embed.set_thumbnail(url=LOGO_CHOCOBOT)
+    embed.set_footer(text=FOOTER)
+    await arrival_departure.send(embed=embed)
 
 
 @bot.command()  # commande help

@@ -12,7 +12,7 @@ Merci.
 
 - Reparer la commande $mute (problème de markdown et parfois ça met None après la raison, plein d'erreurs)
 - Reparer la commande unban, elle marche pas du tout plein d'erreurs
-- Faire un message auto quand est ban du serveur avec EMBED
+
                LISTE DES CMDS AVEC EMBEDS:
 -BAN: FAIT
 -BAN PAS PERM: FAIT
@@ -29,6 +29,7 @@ Merci.
 -SAY: PAS BESOIN POUR CETTE CMD
 -MESSAGE AUTO JOIN : FAIT
 -MESSAGE AUTO LEAVE : FAIT
+-MESSAGE AUTO BAN : FAIT
 
 
 SITE POUR CRÉER DES EMBEDS EN PYTHON SANS CODE:
