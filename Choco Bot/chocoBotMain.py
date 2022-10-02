@@ -5,7 +5,6 @@
 import time  # pour le bot.latency
 import discord
 from discord.ext import commands
-import os
 import random
 from chocodico import *
 
@@ -16,7 +15,7 @@ bot.remove_command('help')  # j'ai ma propre commande help
 
 # Constante (parce qu'on les met partout)
 RICKROLL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-FOOTER = "Team Chocolatine"
+FOOTER = "Team Chocolatine tine tine "
 
 
 ###################################
