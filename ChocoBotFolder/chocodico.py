@@ -69,7 +69,10 @@ banned_words = [
     "pain  au  chocolat",
     "painauchocolat",
     "pain au chocola",
-    "phrase de test 1234",
+    "pain-au-chocolat",
+    "pain_au_chocolat",
+    "pain-au-chocola",
+    "pain_au_chocola",
 ]
 
 

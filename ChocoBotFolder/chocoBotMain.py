@@ -11,6 +11,7 @@ from chocodico import *
 intents = discord.Intents.all()  # intents, je ne sais pas trop à quoi ça sert, mais sans mon code marche pas
 intents.members = True
 intents.bans = True
+intents.message_content = True
 bot = commands.Bot(command_prefix="-", intents=intents)  # le préfixe et leur truc barbare
 bot.remove_command('help')  # j'ai ma propre commande help
 
@@ -43,11 +44,20 @@ async def on_ready():
 
 
 @bot.event
-async def anti_pain_au_chocolat(message):
+async def on_message(message):
     for words in banned_words:
-        print(words)
-        if words in message.content.lower():
-            message.send(f"Hey {message.author.mention} ! Sur ce serveur la chocolatine règne en maître. Merci de ne pas employer ce mot ici")
+        if message.content.lower() in words:
+            await message.delete()
+            await message.channel.send(f"{message.author.mention} Ici on dit Chocolatine :innocent:")
+
+
+@bot.event
+async def on_message_edit(before, after):
+    for words in banned_words:
+        if after.content.lower() in words:
+            await after.delete()
+            channel = bot.get_channel(after.channel.id)
+            await channel.send(f"{after.author.mention} Ici on dit Chocolatine :innocent:")
 
 
 @bot.event

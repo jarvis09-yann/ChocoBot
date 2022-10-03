@@ -12,7 +12,7 @@ Merci.
 
 - Reparer la commande $mute (problème de markdown et parfois ça met None après la raison, plein d'erreurs)
 
-               LISTE DES CMDS AVEC EMBEDS:
+               LISTE DES CMDS AVEC EMBEDS OU SANS:
 -BAN: FAIT
 -BAN PAS PERM: FAIT
 -KICK: FAIT
@@ -29,7 +29,8 @@ Merci.
 -MESSAGE AUTO JOIN : FAIT
 -MESSAGE AUTO LEAVE : FAIT
 -MESSAGE AUTO BAN : FAIT
-
+-DETECTION MESSAGE PAIN AU CHOCOLAT: FAIT
+-DETECTION MODIFICATION MESSAGE EN PAIN AU CHOCOLAT: FAIT
 
 SITE POUR CRÉER DES EMBEDS EN PYTHON SANS CODE:
 https://cog-creators.github.io/discord-embed-sandbox/
