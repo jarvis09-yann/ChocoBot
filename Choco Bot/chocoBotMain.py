@@ -22,6 +22,7 @@ BAN_HAMMER = "https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128
 
 ###################################
 
+
 def log(msg):
     with open("bot_logs.txt", "a+") as log_it:
         heure = time.ctime()  # Un truc utile pour mettre des heures dans les logs !
@@ -39,6 +40,14 @@ async def on_ready():
     print("Le Choco Bot est en ligne")
     log("Le Choco Bot est en ligne")
 # rien de spécial, juste un msg pour dire que le bot est en ligne (qui est aussi envoyé dans la console !)
+
+
+@bot.event
+async def anti_pain_au_chocolat(message):
+    for words in banned_words:
+        print(words)
+        if words in message.content.lower():
+            message.send(f"Hey {message.author.mention} ! Sur ce serveur la chocolatine règne en maître. Merci de ne pas employer ce mot ici")
 
 
 @bot.event

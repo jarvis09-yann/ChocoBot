@@ -63,3 +63,13 @@ joke_dico = {
     "24": "Quel est le sport préféré des insectes?\n Le criquet",
     "25": "Deux souris voient passer une chauve-souris\n « Regarde, un ange ! »",
 }
+banned_words = [
+    "pain au chocolat",
+    "pain au choco",
+    "pain  au  chocolat",
+    "painauchocolat",
+    "pain au chocola",
+    "phrase de test 1234",
+]
+
+
