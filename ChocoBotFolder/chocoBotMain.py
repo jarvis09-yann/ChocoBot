@@ -25,6 +25,8 @@ BAN_HAMMER = "https://cdn.discordapp.com/emojis/961270811644289094.webp?size=128
 
 
 def log(msg):
+    #channel = ctx.get_channel(1026517685007306773)
+    #channel.send(msg)
     with open("bot_logs.txt", "a+") as log_it:
         heure = time.ctime()  # Un truc utile pour mettre des heures dans les logs !
         log_it.write(f"{heure} | {msg}\n")
