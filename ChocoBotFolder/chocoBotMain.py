@@ -45,12 +45,13 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    for words in banned_words:
-        if message.content.lower() in words:
-            await message.channel.send(f"{message.author.mention} Ici on dit Chocolatine :innocent:")
-            await message.delete(delay=False)
-
-
+    #ID Dans l'ordre : Chocobot - Dyno - RaidProtect
+    if message.author.id != (1018203486665584751) or (155149108183695360) or (466578580449525760):
+        for words in banned_words:
+            if message.content.lower() == words:
+                await message.delete(delay=False)
+                await message.channel.send(f"{message.author.mention} Ici on dit Chocolatine :innocent:")
+    await bot.process_commands(message)
 
 @bot.event
 async def on_message_edit(before, after):
@@ -98,7 +99,7 @@ async def on_member_ban(guild, user):
     await arrival_departure.send(embed=embed)
 
 
-@bot.command()  # commande help
+@bot.command(name="help")  # commande help
 async def help(ctx):
     log(f"commande help enclenchée par {ctx.author.name}")
     print(f"commande help enclenchée par {ctx.author.name}")  # les logs de la console
