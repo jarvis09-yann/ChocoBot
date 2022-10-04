@@ -47,15 +47,18 @@ async def on_ready():
 async def on_message(message):
     for words in banned_words:
         if message.content.lower() in words:
-            await message.delete()
             await message.channel.send(f"{message.author.mention} Ici on dit Chocolatine :innocent:")
+            await message.delete(delay=False)
+
 
 
 @bot.event
 async def on_message_edit(before, after):
+    print("before ", before.content)
+    print("after ", after.content)
     for words in banned_words:
         if after.content.lower() in words:
-            await after.delete()
+            await after.delete(delay=False)
             channel = bot.get_channel(after.channel.id)
             await channel.send(f"{after.author.mention} Ici on dit Chocolatine :innocent:")
 
