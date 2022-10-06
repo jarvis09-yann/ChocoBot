@@ -54,7 +54,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-	role = discord.utils.get(message.author.roles, id=1018205772737417278)
+	role = discord.utils.get(message.guild.roles, id=1018205772737417278)
 	logs = bot.get_channel(CHANNEL_LOGS_ID)
 	# ID Dans l'ordre : Chocobot - Dyno - RaidProtect
 	if role is None:
@@ -71,15 +71,19 @@ async def on_message(message):
 
 @bot.event
 async def on_message_edit(before, after):
-	logs = bot.get_channel(CHANNEL_LOGS_ID)
 	print("before ", before.content)
 	print("after ", after.content)
-	for words in banned_words:
-		if after.content.lower() in words:
-			await after.delete(delay=False)
-			channel = bot.get_channel(after.channel.id)
-			await channel.send(f"{after.author.mention} Ici on dit Chocolatine :innocent:")
-			await logs.send(f"{after.author.mention} a edit un message en Pain Au Chocolat")
+	role = discord.utils.get(after.author.roles, id=1018205772737417278)
+	logs = bot.get_channel(CHANNEL_LOGS_ID)
+	if role is None:
+		for words in banned_words:
+			if after.content.lower() in words:
+				await after.delete(delay=False)
+				channel = bot.get_channel(after.channel.id)
+				await channel.send(f"{after.author.mention} Ici on dit Chocolatine :innocent:")
+				await logs.send(f"{after.author.mention} a edit un message en Pain Au Chocolat")
+	print("pas anti pac " + str(role))
+	await bot.process_commands(after)
 
 
 @bot.event
@@ -91,7 +95,7 @@ async def on_member_join(member):
 						  description=f"Bienvenue {member.mention} sur le serveur de la Team Chocolatine rends-toi dans le salon {rules.mention} pour avoir accès à l'entièreté du serveur",
 						  color=0xe9c46a)
 	embed.set_thumbnail(url=LOGO_CHOCOBOT)
-	embed.set_footer(text=FOOTER)
+	embed.set_footer(text=FOOTER + f" | membres : {member.guild.member_count}")
 	await arrival.send(embed=embed)
 	await logs.send(embed=embed)
 
@@ -104,7 +108,7 @@ async def on_member_remove(member):
 						  description=f"Au revoir {member.mention} et peut être à bientôt sur le serveur de la Team Chocolatine !",
 						  color=0xBD3100)
 	embed.set_thumbnail(url=LOGO_CHOCOBOT)
-	embed.set_footer(text=FOOTER)
+	embed.set_footer(text=FOOTER + f" | membres :{member.guild.member_count}")
 	await departure.send(embed=embed)
 	await logs.send(embed=embed)
 
@@ -117,7 +121,7 @@ async def on_member_ban(guild, user):
 						  description=f"{user.mention} s'est fait bannir du serveur {guild.name} !", color=0xBD3100)
 	embed.set_author(name="ban", icon_url=BAN_HAMMER)
 	embed.set_thumbnail(url=LOGO_CHOCOBOT)
-	embed.set_footer(text=FOOTER)
+	embed.set_footer(text=FOOTER + f" | membres : {guild.member_count}")
 	await arrival_departure.send(embed=embed)
 	await logs.send(embed=embed)
 
@@ -162,7 +166,7 @@ async def choco(ctx):
 	print(f"{ctx.author.name} a exécuté la commande choco, choco choisie: {rdm_choco} ")
 
 
-@bot.command()
+@bot.command(name="joke")
 async def joke(ctx):
 	logs = bot.get_channel(CHANNEL_LOGS_ID)
 	joke_choice = random.choice(list(joke_dico))
