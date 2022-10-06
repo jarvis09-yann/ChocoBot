@@ -57,7 +57,7 @@ async def on_message(message):
 	role = discord.utils.get(message.guild.roles, id=1018205772737417278)
 	logs = bot.get_channel(CHANNEL_LOGS_ID)
 	# ID Dans l'ordre : Chocobot - Dyno - RaidProtect
-	if role is None:
+	if message.guild.roles != role:
 		for words in banned_words:
 			if message.content.lower() == words:
 				await message.delete(delay=False)
@@ -75,7 +75,7 @@ async def on_message_edit(before, after):
 	print("after ", after.content)
 	role = discord.utils.get(after.author.roles, id=1018205772737417278)
 	logs = bot.get_channel(CHANNEL_LOGS_ID)
-	if role is None:
+	if after.author.roles != role:
 		for words in banned_words:
 			if after.content.lower() in words:
 				await after.delete(delay=False)
