@@ -34,6 +34,7 @@ cant_use_cmd.set_thumbnail(url="https://media.tenor.com/4qOJaZloJj4AAAAj/tag.gif
 cant_use_cmd.set_footer(text=FOOTER)
 
 #pas encore utilisé faudrait la revoir
+"""
 async def log(ctx, type, *after):
 	current_time = now.sfrtime("Le %d/%m %H:%M")
 	logs_channel = bot.get_channel(CHANNEL_LOGS_ID)
@@ -55,7 +56,7 @@ async def log(ctx, type, *after):
 		log_embed.add_field(name=f"Membre BAN {ctx.author.mention} {ctx.author.discriminator} par ctx", value="", inline=False)
 	log_embed.set_footer(text=f"{FOOTER} • {current_time}")
 	await logs_channel.send(embed=log_embed)
-
+"""
 
 @bot.event
 async def on_ready():
