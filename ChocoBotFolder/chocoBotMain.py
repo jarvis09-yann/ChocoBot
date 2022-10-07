@@ -7,7 +7,10 @@ import discord
 from discord.ext import commands
 import random
 from chocodico import *
+import datetime
 
+
+now = datetime.datetime.now()
 intents = discord.Intents.all()  # intents, je ne sais pas trop à quoi ça sert, mais sans mon code marche pas
 intents.members = True
 intents.bans = True
@@ -30,16 +33,28 @@ cant_use_cmd.set_author(name="Vous ne pouvez pas utiliser cette commande !", url
 cant_use_cmd.set_thumbnail(url="https://media.tenor.com/4qOJaZloJj4AAAAj/tag.gif")
 cant_use_cmd.set_footer(text=FOOTER)
 
-""" A VOIR SI PRATIQUE OU MIEUX DE FAIRE DANS CHAQUE CODE (pour l'instant je fais dans chaque code
-async def log(ctx):
+#pas encore utilisé faudrait la revoir
+async def log(ctx, type, *after):
+	current_time = now.sfrtime("Le %d/%m %H:%M")
 	logs_channel = bot.get_channel(CHANNEL_LOGS_ID)
-	log_embed = discord.Embed(title="**__Bienvenue !__**",
-							  description=f"Bienvenue {ctx.author.mention} sur le serveur de la Team Chocolatine rends-toi dans le salon {ctx.author.mention} pour avoir accès à l'entièreté du serveur",
-							  color=0xe9c46a)
+	current_channel = bot.get_channel(ctx.channel.id)
+	log_embed = discord.Embed(title="**Logs__**", color=0xe9c46a)
 	log_embed.set_author(url=ctx.author.avatar, name=ctx.author.name)
-	log_embed.set_footer(text=FOOTER)
+	if type == "on_message_delete":
+		log_embed.add_field(name=f"Message envoyé par {ctx.author.mention} supprimé dans {current_channel.mention}", value=ctx.message.content, inline=False)
+	elif type == "on_message_edit":
+		log_embed.add_field(name=f"Message édité dans {current_channel.mention} par {ctx.author.mention}", value="", inline=False)
+		log_embed.add_field(name=f"Before", value=ctx.content, inline=False)
+		log_embed.add_field(name=f"After", value=after.content, inline=False)
+	elif type == "on_member_join":
+		log_embed.add_field(name=f"Nouveau membre {ctx.author.mention} {ctx.author.discriminator}", value="", inline=False)
+		log_embed.add_field(name=f"Age du compte {ctx.author.mention} {ctx.author.created_at}", value="", inline=False)
+	elif type == "on_member_remove":
+		log_embed.add_field(name=f"Membre parti {ctx.author.mention} {ctx.author.discriminator}", value="", inline=False)
+	elif type == "on_member_ban":
+		log_embed.add_field(name=f"Membre BAN {ctx.author.mention} {ctx.author.discriminator} par ctx", value="", inline=False)
+	log_embed.set_footer(text=f"{FOOTER} • {current_time}")
 	await logs_channel.send(embed=log_embed)
-"""
 
 
 @bot.event
@@ -47,6 +62,7 @@ async def on_ready():
 	logs = bot.get_channel(CHANNEL_LOGS_ID)
 	print("Le Choco Bot est en ligne")
 	await logs.send("Le Choco Bot est en ligne")
+
 
 
 # rien de spécial, juste un msg pour dire que le bot est en ligne (qui est aussi envoyé dans la console !)
@@ -81,6 +97,7 @@ async def on_message_edit(before, after):
 				await after.delete(delay=False)
 				channel = bot.get_channel(after.channel.id)
 				await channel.send(f"{after.author.mention} Ici on dit Chocolatine :innocent:")
+				await log(before, "on_message_edit", after)
 				await logs.send(f"{after.author.mention} a edit un message en Pain Au Chocolat")
 	print("pas anti pac " + str(role))
 	await bot.process_commands(after)
