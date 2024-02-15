@@ -396,5 +396,5 @@ async def unmute(ctx, member: discord.Member):
 		mais il n'avait pas la permission administrateur donc la commande a échouée.""")
 
 
-bot.run("MTAxODIwMzQ4NjY2NTU4NDc1MQ.GTbWxn.UFpARrCDkfNcb9zWikd3htT6MkDSw1OR-4rYHs")
-#bot.run("OTA5MTE4MTM2OTI0NjU1NzA3.GcQSzf.OLRMge260C8tw5H6LZTMtjXnfZx2pddO6k5WP8") Testing bot
+bot.run("No i didn't forget to remove the token.")
+#bot.run("I didnt.") Testing bot
