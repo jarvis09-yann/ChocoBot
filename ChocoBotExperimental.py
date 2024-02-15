@@ -168,4 +168,4 @@ async def say(ctx, *, message: discord.Option(str,"écrivez ce que vous voulez q
 
 
 
-bot.run("MTAxODIwMzQ4NjY2NTU4NDc1MQ.GTbWxn.UFpARrCDkfNcb9zWikd3htT6MkDSw1OR-4rYHs")
+bot.run("Oh fuck i forgot to remove it...")
